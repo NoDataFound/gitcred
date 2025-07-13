@@ -1,0 +1,257 @@
+{
+  "Web Development & APIs": {
+    "basic": [ "net/http" ],
+    "intermediate": [ "gin-gonic/gin" ],
+    "advanced": [ "gofiber/fiber" ]
+  },
+  "Web App Development & Visualization": {
+    "basic": [ "html/template" ],
+    "intermediate": [ "gobuffalo/buffalo" ],
+    "advanced": [ "gopherjs/gopherjs" ]
+  },
+  "Data Science & Analysis": {
+    "basic": [ "gonum/gonum" ],
+    "intermediate": [ "sjwhitworth/golearn" ],
+    "advanced": [ "kniren/gota" ]
+  },
+  "Data Visualization": {
+    "basic": [ "gonum/plot" ],
+    "intermediate": [ "go-echarts/go-echarts" ],
+    "advanced": [ "go-gl/glfw" ]
+  },
+  "Machine Learning (Classical)": {
+    "basic": [ "sjwhitworth/golearn" ],
+    "intermediate": [ "pa-m/sklearn" ],
+    "advanced": [ "kniren/gota" ]
+  },
+  "Machine Learning (Deep Learning)": {
+    "basic": [ "gorgonia/gorgonia" ],
+    "intermediate": [ "tensorflow/tensorflow (Go API)" ],
+    "advanced": [ "owulveryck/onnx-go" ]
+  },
+  "AI & LLM/NLP": {
+    "basic": [ "jdkato/prose" ],
+    "intermediate": [ "nlpodyssey/spago" ],
+    "advanced": [ "go-skynet/LocalAI" ]
+  },
+  "AI & Computer Vision": {
+    "basic": [ "esimov/pigo" ],
+    "intermediate": [ "gorgonia/tensor" ],
+    "advanced": [ "hybridgroup/gocv" ]
+  },
+  "AI & Speech/Audio": {
+    "basic": [ "bregydoc/gtranslate" ],
+    "intermediate": [ "asticode/go-astits" ],
+    "advanced": [ "asticode/go-astispeech" ]
+  },
+  "AI & Reinforcement Learning": {
+    "basic": [ "rlgamer/rl" ],
+    "intermediate": [ "muesli/regommend" ],
+    "advanced": [ "owulveryck/onnx-go" ]
+  },
+  "AI & Model Serving/Inference": {
+    "basic": [ "go-skynet/LocalAI" ],
+    "intermediate": [ "onnx/onnx-go" ],
+    "advanced": [ "sbinet/go-python" ]
+  },
+  "Model Interchange & Deployment": {
+    "basic": [ "encoding/gob" ],
+    "intermediate": [ "google/flatbuffers" ],
+    "advanced": [ "protocolbuffers/protobuf-go" ]
+  },
+  "Machine Learning Operations (MLOps)": {
+    "basic": [ "Makefile" ],
+    "intermediate": [ "docker/docker" ],
+    "advanced": [ "kubernetes/client-go" ]
+  },
+  "Parallel Computing & Serialization": {
+    "basic": [ "goroutines" ],
+    "intermediate": [ "sync.WaitGroup" ],
+    "advanced": [ "golang.org/x/sync/errgroup" ]
+  },
+  "Software Testing": {
+    "basic": [ "testing" ],
+    "intermediate": [ "stretchr/testify" ],
+    "advanced": [ "gotest.tools" ]
+  },
+  "Property-Based Testing": {
+    "basic": [ "testify/assert" ],
+    "intermediate": [ "leanovate/gopter" ],
+    "advanced": [ "quicktest" ]
+  },
+  "Test Coverage": {
+    "basic": [ "go test -cover" ],
+    "intermediate": [ "golangci-lint" ],
+    "advanced": [ "codecov/codecov-go" ]
+  },
+  "Cloud Services (AWS)": {
+    "basic": [ "aws/aws-sdk-go" ],
+    "intermediate": [ "aws/aws-lambda-go" ],
+    "advanced": [ "terraform-providers/terraform-provider-aws" ]
+  },
+  "Cloud Services (Azure)": {
+    "basic": [ "Azure/azure-sdk-for-go" ],
+    "intermediate": [ "Azure/go-autorest" ],
+    "advanced": [ "Azure/azure-pipeline-go" ]
+  },
+  "Cloud Services (GCP)": {
+    "basic": [ "googleapis/google-cloud-go" ],
+    "intermediate": [ "GoogleCloudPlatform/cloud-functions-go" ],
+    "advanced": [ "GoogleCloudPlatform/terraform-provider-google" ]
+  },
+  "Networking & SSH": {
+    "basic": [ "net" ],
+    "intermediate": [ "golang.org/x/crypto/ssh" ],
+    "advanced": [ "gliderlabs/ssh" ]
+  },
+  "Web Scraping & APIs": {
+    "basic": [ "net/http" ],
+    "intermediate": [ "PuerkitoBio/goquery" ],
+    "advanced": [ "colly/colly" ]
+  },
+  "Web Scraping & Parsing": {
+    "basic": [ "encoding/xml" ],
+    "intermediate": [ "tidwall/gjson" ],
+    "advanced": [ "antchfx/htmlquery" ]
+  },
+  "Web Scraping & Crawling": {
+    "basic": [ "colly/colly" ],
+    "intermediate": [ "gocolly/colly" ],
+    "advanced": [ "puerkitobio/goquery" ]
+  },
+  "Databases & ORMs": {
+    "basic": [ "database/sql" ],
+    "intermediate": [ "go-sql-driver/mysql" ],
+    "advanced": [ "gorm/gorm" ]
+  },
+  "Databases (Postgres)": {
+    "basic": [ "lib/pq" ],
+    "intermediate": [ "jackc/pgx" ],
+    "advanced": [ "gorm/gorm (Postgres)" ]
+  },
+  "Databases (MySQL)": {
+    "basic": [ "go-sql-driver/mysql" ],
+    "intermediate": [ "gorm/gorm (MySQL)" ],
+    "advanced": [ "jmoiron/sqlx" ]
+  },
+  "Databases (SQLite)": {
+    "basic": [ "mattn/go-sqlite3" ],
+    "intermediate": [ "jmoiron/sqlx" ],
+    "advanced": [ "gorm/gorm (SQLite)" ]
+  },
+  "Database Migration": {
+    "basic": [ "golang-migrate/migrate" ],
+    "intermediate": [ "pressly/goose" ],
+    "advanced": [ "rubenv/sql-migrate" ]
+  },
+  "Task Queues & Distributed Processing": {
+    "basic": [ "golang.org/x/sync/semaphore" ],
+    "intermediate": [ "hibiken/asynq" ],
+    "advanced": [ "gocelery/gocelery" ]
+  },
+  "Caching & Message Brokering": {
+    "basic": [ "patrickmn/go-cache" ],
+    "intermediate": [ "go-redis/redis" ],
+    "advanced": [ "streadway/amqp" ]
+  },
+  "Messaging & Streaming": {
+    "basic": [ "nats-io/nats.go" ],
+    "intermediate": [ "segmentio/kafka-go" ],
+    "advanced": [ "Shopify/sarama" ]
+  },
+  "Serialization & Config Parsing": {
+    "basic": [ "encoding/json" ],
+    "intermediate": [ "spf13/viper" ],
+    "advanced": [ "gopkg.in/yaml.v2" ]
+  },
+  "Environment Management": {
+    "basic": [ "os.Getenv" ],
+    "intermediate": [ "spf13/viper" ],
+    "advanced": [ "direnv" ]
+  },
+  "Environment & Dependency Management": {
+    "basic": [ "go mod" ],
+    "intermediate": [ "go get" ],
+    "advanced": [ "dep" ]
+  },
+  "Data Validation & Settings Management": {
+    "basic": [ "go-playground/validator" ],
+    "intermediate": [ "urfave/cli" ],
+    "advanced": [ "spf13/cobra" ]
+  },
+  "Data Validation & Serialization": {
+    "basic": [ "encoding/json" ],
+    "intermediate": [ "gopkg.in/yaml.v2" ],
+    "advanced": [ "ugorji/go/codec" ]
+  },
+  "Templating": {
+    "basic": [ "text/template" ],
+    "intermediate": [ "html/template" ],
+    "advanced": [ "Masterminds/sprig" ]
+  },
+  "Automation & Deployment": {
+    "basic": [ "os/exec" ],
+    "intermediate": [ "mitchellh/go-homedir" ],
+    "advanced": [ "go-task/task" ]
+  },
+  "Automation & Task Running": {
+    "basic": [ "Makefile" ],
+    "intermediate": [ "magefile/mage" ],
+    "advanced": [ "go-task/task" ]
+  },
+  "Command Line Tools": {
+    "basic": [ "flag" ],
+    "intermediate": [ "spf13/pflag" ],
+    "advanced": [ "spf13/cobra" ]
+  },
+  "Terminal Formatting & Visualization": {
+    "basic": [ "fatih/color" ],
+    "intermediate": [ "olekukonko/tablewriter" ],
+    "advanced": [ "muesli/termenv" ]
+  },
+  "Terminal UIs": {
+    "basic": [ "manifoldco/promptui" ],
+    "intermediate": [ "gizak/termui" ],
+    "advanced": [ "rivo/tview" ]
+  },
+  "Logging": {
+    "basic": [ "log" ],
+    "intermediate": [ "sirupsen/logrus" ],
+    "advanced": [ "uber-go/zap" ]
+  },
+  "Packaging & Distribution": {
+    "basic": [ "go build" ],
+    "intermediate": [ "goreleaser" ],
+    "advanced": [ "docker/docker" ]
+  },
+  "Package Management": {
+    "basic": [ "go mod" ],
+    "intermediate": [ "dep" ],
+    "advanced": [ "godep" ]
+  },
+  "Code Formatting & Linting": {
+    "basic": [ "gofmt" ],
+    "intermediate": [ "golint" ],
+    "advanced": [ "golangci-lint" ]
+  },
+  "Static Typing & Checking": {
+    "basic": [ "go vet" ],
+    "intermediate": [ "staticcheck" ],
+    "advanced": [ "gosimple" ]
+  },
+  "Security Auditing": {
+    "basic": [ "gosec" ],
+    "intermediate": [ "golangci-lint (security rules)" ],
+    "advanced": [ "semgrep" ]
+  },
+  "Cryptography": {
+    "basic": [ "crypto" ],
+    "intermediate": [ "golang.org/x/crypto" ],
+    "advanced": [ "FiloSottile/age" ]
+  },
+  "Secrets Management": {
+    "basic": [ "os.Getenv" ],
+    "intermediate": [ "aws/aws-sdk-go (Secrets Manager)" ],
+    "advanced": [ "hashicorp/vault" ]
+  }
+}
