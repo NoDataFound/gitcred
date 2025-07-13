@@ -1,0 +1,257 @@
+{
+  "Web Development & APIs": {
+    "basic": [ "express" ],
+    "intermediate": [ "koa" ],
+    "advanced": [ "next.js" ]
+  },
+  "Web App Development & Visualization": {
+    "basic": [ "react" ],
+    "intermediate": [ "vue" ],
+    "advanced": [ "svelte" ]
+  },
+  "Data Science & Analysis": {
+    "basic": [ "danfojs" ],
+    "intermediate": [ "numjs" ],
+    "advanced": [ "tensorflow.js" ]
+  },
+  "Data Visualization": {
+    "basic": [ "chart.js" ],
+    "intermediate": [ "d3.js" ],
+    "advanced": [ "plotly.js" ]
+  },
+  "Machine Learning (Classical)": {
+    "basic": [ "ml5.js" ],
+    "intermediate": [ "brain.js" ],
+    "advanced": [ "scikitjs" ]
+  },
+  "Machine Learning (Deep Learning)": {
+    "basic": [ "tensorflow.js" ],
+    "intermediate": [ "onnxruntime-web" ],
+    "advanced": [ "synaptic" ]
+  },
+  "AI & LLM/NLP": {
+    "basic": [ "openai-node", "huggingface", "gpt-3-encoder" ],
+    "intermediate": [ "transformers.js" ],
+    "advanced": [ "llama-node" ]
+  },
+  "AI & Computer Vision": {
+    "basic": [ "tracking.js" ],
+    "intermediate": [ "opencv.js" ],
+    "advanced": [ "face-api.js" ]
+  },
+  "AI & Speech/Audio": {
+    "basic": [ "annyang" ],
+    "intermediate": [ "microsoft-cognitiveservices-speech-sdk" ],
+    "advanced": [ "deepspeech-node" ]
+  },
+  "AI & Reinforcement Learning": {
+    "basic": [ "reinforce-js" ],
+    "intermediate": [ "neataptic" ],
+    "advanced": [ "rl-js" ]
+  },
+  "AI & Model Serving/Inference": {
+    "basic": [ "onnxruntime-web" ],
+    "intermediate": [ "tensorflow-serving-node" ],
+    "advanced": [ "tritonclient-node" ]
+  },
+  "Model Interchange & Deployment": {
+    "basic": [ "picklejs" ],
+    "intermediate": [ "onnxjs" ],
+    "advanced": [ "dockerode" ]
+  },
+  "Machine Learning Operations (MLOps)": {
+    "basic": [ "mlflow-js" ],
+    "intermediate": [ "dvc-node" ],
+    "advanced": [ "kubeflow-js" ]
+  },
+  "Parallel Computing & Serialization": {
+    "basic": [ "worker_threads" ],
+    "intermediate": [ "cluster" ],
+    "advanced": [ "zeromq" ]
+  },
+  "Software Testing": {
+    "basic": [ "mocha" ],
+    "intermediate": [ "jest" ],
+    "advanced": [ "cypress" ]
+  },
+  "Property-Based Testing": {
+    "basic": [ "testcheck" ],
+    "intermediate": [ "fast-check" ],
+    "advanced": [ "jsverify" ]
+  },
+  "Test Coverage": {
+    "basic": [ "nyc" ],
+    "intermediate": [ "istanbul" ],
+    "advanced": [ "codecov-node" ]
+  },
+  "Cloud Services (AWS)": {
+    "basic": [ "aws-sdk" ],
+    "intermediate": [ "serverless" ],
+    "advanced": [ "cdk" ]
+  },
+  "Cloud Services (Azure)": {
+    "basic": [ "@azure/storage-blob" ],
+    "intermediate": [ "@azure/functions" ],
+    "advanced": [ "azure-arm-resource" ]
+  },
+  "Cloud Services (GCP)": {
+    "basic": [ "@google-cloud/storage" ],
+    "intermediate": [ "@google-cloud/functions" ],
+    "advanced": [ "@google-cloud/aiplatform" ]
+  },
+  "Networking & SSH": {
+    "basic": [ "net" ],
+    "intermediate": [ "ssh2" ],
+    "advanced": [ "node-telnet-client" ]
+  },
+  "Web Scraping & APIs": {
+    "basic": [ "axios" ],
+    "intermediate": [ "node-fetch" ],
+    "advanced": [ "got" ]
+  },
+  "Web Scraping & Parsing": {
+    "basic": [ "cheerio" ],
+    "intermediate": [ "jsdom" ],
+    "advanced": [ "puppeteer" ]
+  },
+  "Web Scraping & Crawling": {
+    "basic": [ "crawler" ],
+    "intermediate": [ "apify" ],
+    "advanced": [ "scrapy-js" ]
+  },
+  "Databases & ORMs": {
+    "basic": [ "nedb" ],
+    "intermediate": [ "sequelize" ],
+    "advanced": [ "typeorm" ]
+  },
+  "Databases (Postgres)": {
+    "basic": [ "pg" ],
+    "intermediate": [ "slonik" ],
+    "advanced": [ "pg-promise" ]
+  },
+  "Databases (MySQL)": {
+    "basic": [ "mysql" ],
+    "intermediate": [ "mysql2" ],
+    "advanced": [ "sequelize" ]
+  },
+  "Databases (SQLite)": {
+    "basic": [ "sqlite3" ],
+    "intermediate": [ "better-sqlite3" ],
+    "advanced": [ "typeorm" ]
+  },
+  "Database Migration": {
+    "basic": [ "db-migrate" ],
+    "intermediate": [ "umzug" ],
+    "advanced": [ "sequelize-cli" ]
+  },
+  "Task Queues & Distributed Processing": {
+    "basic": [ "bull" ],
+    "intermediate": [ "bee-queue" ],
+    "advanced": [ "agenda" ]
+  },
+  "Caching & Message Brokering": {
+    "basic": [ "node-cache" ],
+    "intermediate": [ "ioredis" ],
+    "advanced": [ "memcached" ]
+  },
+  "Messaging & Streaming": {
+    "basic": [ "pubsub-js" ],
+    "intermediate": [ "amqplib" ],
+    "advanced": [ "kafka-node" ]
+  },
+  "Serialization & Config Parsing": {
+    "basic": [ "jsonfile" ],
+    "intermediate": [ "js-yaml" ],
+    "advanced": [ "msgpack-lite" ]
+  },
+  "Environment Management": {
+    "basic": [ "dotenv" ],
+    "intermediate": [ "cross-env" ],
+    "advanced": [ "nvm" ]
+  },
+  "Environment & Dependency Management": {
+    "basic": [ "npm" ],
+    "intermediate": [ "yarn" ],
+    "advanced": [ "pnpm" ]
+  },
+  "Data Validation & Settings Management": {
+    "basic": [ "joi" ],
+    "intermediate": [ "yup" ],
+    "advanced": [ "ajv" ]
+  },
+  "Data Validation & Serialization": {
+    "basic": [ "validator" ],
+    "intermediate": [ "serialize-javascript" ],
+    "advanced": [ "superstruct" ]
+  },
+  "Templating": {
+    "basic": [ "ejs" ],
+    "intermediate": [ "pug" ],
+    "advanced": [ "handlebars" ]
+  },
+  "Automation & Deployment": {
+    "basic": [ "npm scripts" ],
+    "intermediate": [ "gulp" ],
+    "advanced": [ "webpack" ]
+  },
+  "Automation & Task Running": {
+    "basic": [ "npm run" ],
+    "intermediate": [ "gulp" ],
+    "advanced": [ "grunt" ]
+  },
+  "Command Line Tools": {
+    "basic": [ "commander" ],
+    "intermediate": [ "yargs" ],
+    "advanced": [ "oclif" ]
+  },
+  "Terminal Formatting & Visualization": {
+    "basic": [ "chalk" ],
+    "intermediate": [ "ora" ],
+    "advanced": [ "blessed" ]
+  },
+  "Terminal UIs": {
+    "basic": [ "enquirer" ],
+    "intermediate": [ "ink" ],
+    "advanced": [ "blessed-contrib" ]
+  },
+  "Logging": {
+    "basic": [ "console" ],
+    "intermediate": [ "winston" ],
+    "advanced": [ "pino" ]
+  },
+  "Packaging & Distribution": {
+    "basic": [ "npm" ],
+    "intermediate": [ "pkg" ],
+    "advanced": [ "nexe" ]
+  },
+  "Package Management": {
+    "basic": [ "npm" ],
+    "intermediate": [ "yarn" ],
+    "advanced": [ "pnpm" ]
+  },
+  "Code Formatting & Linting": {
+    "basic": [ "prettier" ],
+    "intermediate": [ "eslint" ],
+    "advanced": [ "standard" ]
+  },
+  "Static Typing & Checking": {
+    "basic": [ "jsdoc" ],
+    "intermediate": [ "typescript" ],
+    "advanced": [ "flow" ]
+  },
+  "Security Auditing": {
+    "basic": [ "npm audit" ],
+    "intermediate": [ "snyk" ],
+    "advanced": [ "nsp" ]
+  },
+  "Cryptography": {
+    "basic": [ "crypto" ],
+    "intermediate": [ "node-forge" ],
+    "advanced": [ "tweetnacl" ]
+  },
+  "Secrets Management": {
+    "basic": [ "dotenv" ],
+    "intermediate": [ "keytar" ],
+    "advanced": [ "aws-secretsmanager" ]
+  }
+}
