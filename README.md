@@ -124,6 +124,17 @@ GitCred is modular and extensible. You can define custom skill mappings for any 
 
 ## Setup
 
+## API Key: Optional but Recommended
+- **Without a key**: You use GitHub's anonymous access (rate limit: ~60 requests/hour).
+- **With a key**: Your rate limit increases to 5,000 requests/hour.
+
+If you want to use the github API, add the following to your `.env`
+
+```bash
+GITHUB_TOKEN="YourGitHubPersonalAccessToken"
+```
+
+
 Either run 
 ```bash
 chmod +755 gitcred_installer.sh
