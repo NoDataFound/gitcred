@@ -35,9 +35,6 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
   </tr>
 </table>
 
-```
-Above are results from python gitcred_cli.py -u NoDataFound
-```
 # GitCred: Straight Outta Commits Overview
 
 `GitCred: Straight Outta Commits` aims to provide insight into skillset by performing analysis on a GitHub user's profile (or any code repos, local files, etc... ) to generate a comprehensive, evidence-based skill and impact summary by inspecting their original repositories (not forks). Purposely does not leverage AI models so you can build your own concept mapping. Trust but verify.
