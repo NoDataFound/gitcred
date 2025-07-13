@@ -16,7 +16,7 @@
  _ __  /  \________________________________________________________.gitCred v0.2.3 _ ___ _ 
 _ __ \/ /\_____________________________________________________ _________ __ _______ _  
     \  /         T H E   P I N A C L E    O F   H A K C I N G   Q U A L I T Y  
-     \/ 
+     \/                     "Get the fork out" - DeathPirate
 ```
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
