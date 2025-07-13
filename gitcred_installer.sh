@@ -2,7 +2,6 @@
 
 echo "--- Straight outta commits installer. ---"
 
-# Check if python3 is installed
 if ! command -v python3 &> /dev/null
 then
     echo "Error: python3 is not installed. Please install Python 3."
@@ -13,7 +12,6 @@ echo "Creating Python virtual environment 'gitcredvenv'..."
 python3 -m venv gitcredvenv
 source gitcredvenv/bin/activate
 
-# 3. Install dependencies
 echo "Installing dependencies..."
 pip install --quiet --upgrade pip
 pip install --quiet -r requirements.txt
