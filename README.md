@@ -32,6 +32,7 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
   <tr>
     <td align="center"><img src="images/repo_processing.png" alt="A"></td>
     <td align="center"><img src="images/summary.png" alt="B"></td>
+    <td align="center"><img src="images/concept_map_json.png" alt="B"></td>
   </tr>
 </table>
 
