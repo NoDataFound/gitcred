@@ -5,11 +5,19 @@ import json
 from github import Github, GithubException
 import pandas as pd
 from analyzers.python_analyzer import PythonAnalyzer
+from analyzers.javascript_analyzer import JavaScriptAnalyzer 
+from analyzers.c_analyzer import CAnalyzer 
+from analyzers.bash_analyzer import BashAnalyzer
 
 # This map is crucial for analyzing different Python-based repos
 LANGUAGE_TO_ANALYZER_MAP = {
     "Python": PythonAnalyzer,
-    "Jupyter Notebook": PythonAnalyzer
+    "Jupyter Notebook": PythonAnalyzer,
+    "JavaScript": JavaScriptAnalyzer,
+    "TypeScript": JavaScriptAnalyzer,
+    "C": CAnalyzer, 
+    "C++": CAnalyzer, 
+    "Shell": BashAnalyzer,
 }
 
 def get_user_and_repos(github_client, username):
