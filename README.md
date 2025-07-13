@@ -178,6 +178,16 @@ python gitcred_cli.py -l /path/to/local/repo
 
 All output and summary files are saved under the `analysis/` directory per user or repo.
 
+<table align="center">
+  <tr>
+    <td align="center"><img src="images/comments_csv.png" alt="A"></td>
+    <td align="center"><img src="images/summary_csv.png" alt="B"></td>
+  </tr>
+</table>
+
+![Some Picture](images/technical_analysis_csv.png)
+
+
 ## Summary
 
 GitCred’s modular pipeline validates skills, pinpoints strengths, exposes weaknesses, and helps you or your team make data-driven talent, security, or business decisions. For hackers, threat hunters, and recruiters, it is like scanning a target’s badge and getting their actual clearance, not just what is written in marker.
