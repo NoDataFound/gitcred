@@ -33,6 +33,16 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 # GitCred: Straight Outta Commits Overview
 
+## Languages Currently Supported
+
+[![Python](https://img.shields.io/badge/Python-blue?logo=python)](https://www.python.org/)
+[![Jupyter](https://img.shields.io/badge/Jupyter%20Notebook-orange?logo=jupyter)](https://jupyter.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![TypeScript](https://img.shields.io/badge/TypeScript-blue?logo=typescript)](https://www.typescriptlang.org/)
+[![C](https://img.shields.io/badge/C-lightgrey?logo=c)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![C++](https://img.shields.io/badge/C++-00599C?logo=c%2B%2B)](https://isocpp.org/)
+[![Shell](https://img.shields.io/badge/Shell-black?logo=gnu-bash)](https://www.gnu.org/software/bash/)
+
 `GitCred: Straight Outta Commits` aims to provide insight into skillset by performing analysis on a GitHub user's profile (or any code repos, local files, etc... ) to generate a comprehensive, evidence-based skill and impact summary by inspecting their original repositories (not forks). Purposely does not leverage AI models so you can build your own concept mapping. Trust but verify.
 
 ## Resume Builder Use Cases
