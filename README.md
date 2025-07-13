@@ -28,12 +28,7 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 # GitCred: Straight Outta Commits
 
-<table align="center">
-  <tr>
-    <td align="center"><img src="images/repo_processing.png" alt="A"></td>
-    <td align="center"><img src="images/summary.png" alt="B"></td>
-  </tr>
-</table>
+
 
 
 
