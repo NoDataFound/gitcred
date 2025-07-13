@@ -28,13 +28,8 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 # GitCred: Straight Outta Commits
 
-<table align="center">
-  <tr>
-    <td align="center"><img src="images/repo_processing.png" alt="A"></td>
-    <td align="center"><img src="images/summary.png" alt="B"></td>
-    <td align="center"><img src="images/concept_map_json.png" alt="B"></td>
-  </tr>
-</table>
+![Some Picture](images/sidebyside.png)
+
 
 # GitCred: Straight Outta Commits Overview
 
@@ -126,6 +121,8 @@ GitCred is modular and extensible. You can define custom skill mappings for any 
    ```
 
 7. **Test your new mapping** by running the CLI or Streamlit app on a repo using your target language or tech.
+
+![Some Picture](images/concept_map_json.png)
 
 ### Pro Tips
 
