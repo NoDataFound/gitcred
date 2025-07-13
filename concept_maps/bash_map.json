@@ -1,0 +1,257 @@
+{
+  "Web Development & APIs": {
+    "basic": [ "curl" ],
+    "intermediate": [ "httpie" ],
+    "advanced": [ "resty" ]
+  },
+  "Web App Development & Visualization": {
+    "basic": [ "lynx" ],
+    "intermediate": [ "w3m" ],
+    "advanced": [ "shell2http" ]
+  },
+  "Data Science & Analysis": {
+    "basic": [ "awk" ],
+    "intermediate": [ "csvkit" ],
+    "advanced": [ "jq" ]
+  },
+  "Data Visualization": {
+    "basic": [ "column" ],
+    "intermediate": [ "gnuplot" ],
+    "advanced": [ "termgraph" ]
+  },
+  "Machine Learning (Classical)": {
+    "basic": [ "mlr (miller)" ],
+    "intermediate": [ "awk-based ML scripts" ],
+    "advanced": [ "CLI bindings for scikit-learn (via python scripts)" ]
+  },
+  "Machine Learning (Deep Learning)": {
+    "basic": [ "onnxruntime-tools (CLI)" ],
+    "intermediate": [ "torchserve (CLI integration)" ],
+    "advanced": [ "dockerized TensorFlow CLI" ]
+  },
+  "AI & LLM/NLP": {
+    "basic": [ "ollama (CLI)" ],
+    "intermediate": [ "openai CLI" ],
+    "advanced": [ "llama.cpp with bash pipes" ]
+  },
+  "AI & Computer Vision": {
+    "basic": [ "imagemagick" ],
+    "intermediate": [ "ffmpeg" ],
+    "advanced": [ "opencv-cli" ]
+  },
+  "AI & Speech/Audio": {
+    "basic": [ "sox" ],
+    "intermediate": [ "ffmpeg audio filters" ],
+    "advanced": [ "vosk-api (CLI)" ]
+  },
+  "AI & Reinforcement Learning": {
+    "basic": [ "bash game bots (e.g., tictactoe.sh)" ],
+    "intermediate": [ "python RL agents called from shell" ],
+    "advanced": [ "tmux scripting for RL orchestration" ]
+  },
+  "AI & Model Serving/Inference": {
+    "basic": [ "onnxruntime (CLI)" ],
+    "intermediate": [ "docker run model-serving" ],
+    "advanced": [ "kserve CLI" ]
+  },
+  "Model Interchange & Deployment": {
+    "basic": [ "tar" ],
+    "intermediate": [ "rsync" ],
+    "advanced": [ "scp/sftp automation" ]
+  },
+  "Machine Learning Operations (MLOps)": {
+    "basic": [ "cron" ],
+    "intermediate": [ "bash + Makefile for pipelines" ],
+    "advanced": [ "jenkins CLI" ]
+  },
+  "Parallel Computing & Serialization": {
+    "basic": [ "xargs -P" ],
+    "intermediate": [ "GNU parallel" ],
+    "advanced": [ "mpirun (scripted)" ]
+  },
+  "Software Testing": {
+    "basic": [ "bash test blocks" ],
+    "intermediate": [ "bats-core" ],
+    "advanced": [ "shunit2" ]
+  },
+  "Property-Based Testing": {
+    "basic": [ "fuzz bash input" ],
+    "intermediate": [ "jq-fuzz" ],
+    "advanced": [ "hypothesis via shell scripts" ]
+  },
+  "Test Coverage": {
+    "basic": [ "set -x, PS4" ],
+    "intermediate": [ "kcov" ],
+    "advanced": [ "bashcov" ]
+  },
+  "Cloud Services (AWS)": {
+    "basic": [ "aws-cli" ],
+    "intermediate": [ "aws-shell" ],
+    "advanced": [ "boto3 via subprocess" ]
+  },
+  "Cloud Services (Azure)": {
+    "basic": [ "az-cli" ],
+    "intermediate": [ "azure-devops CLI" ],
+    "advanced": [ "terraform with Azure provider" ]
+  },
+  "Cloud Services (GCP)": {
+    "basic": [ "gcloud" ],
+    "intermediate": [ "gsutil" ],
+    "advanced": [ "terraform with GCP provider" ]
+  },
+  "Networking & SSH": {
+    "basic": [ "ssh" ],
+    "intermediate": [ "autossh" ],
+    "advanced": [ "expect" ]
+  },
+  "Web Scraping & APIs": {
+    "basic": [ "curl" ],
+    "intermediate": [ "wget" ],
+    "advanced": [ "scrapy-run from shell" ]
+  },
+  "Web Scraping & Parsing": {
+    "basic": [ "grep" ],
+    "intermediate": [ "sed" ],
+    "advanced": [ "xmllint" ]
+  },
+  "Web Scraping & Crawling": {
+    "basic": [ "wget -r" ],
+    "intermediate": [ "curl with loops" ],
+    "advanced": [ "python scrapy via bash" ]
+  },
+  "Databases & ORMs": {
+    "basic": [ "sqlite3 CLI" ],
+    "intermediate": [ "psql" ],
+    "advanced": [ "mysql CLI" ]
+  },
+  "Databases (Postgres)": {
+    "basic": [ "psql" ],
+    "intermediate": [ "pgcli" ],
+    "advanced": [ "pg_dump automation" ]
+  },
+  "Databases (MySQL)": {
+    "basic": [ "mysql" ],
+    "intermediate": [ "mycli" ],
+    "advanced": [ "mysqldump automation" ]
+  },
+  "Databases (SQLite)": {
+    "basic": [ "sqlite3" ],
+    "intermediate": [ "litecli" ],
+    "advanced": [ "sqldiff" ]
+  },
+  "Database Migration": {
+    "basic": [ "rsync .sql" ],
+    "intermediate": [ "flyway CLI" ],
+    "advanced": [ "Liquibase via bash" ]
+  },
+  "Task Queues & Distributed Processing": {
+    "basic": [ "at" ],
+    "intermediate": [ "cron" ],
+    "advanced": [ "systemd timers" ]
+  },
+  "Caching & Message Brokering": {
+    "basic": [ "memcached-tool" ],
+    "intermediate": [ "redis-cli" ],
+    "advanced": [ "rabbitmqadmin CLI" ]
+  },
+  "Messaging & Streaming": {
+    "basic": [ "mail" ],
+    "intermediate": [ "sendmail" ],
+    "advanced": [ "kafkacat" ]
+  },
+  "Serialization & Config Parsing": {
+    "basic": [ "jq" ],
+    "intermediate": [ "yq" ],
+    "advanced": [ "envsubst" ]
+  },
+  "Environment Management": {
+    "basic": [ ".env + source" ],
+    "intermediate": [ "direnv" ],
+    "advanced": [ "nix-shell" ]
+  },
+  "Environment & Dependency Management": {
+    "basic": [ "apt" ],
+    "intermediate": [ "brew" ],
+    "advanced": [ "nix" ]
+  },
+  "Data Validation & Settings Management": {
+    "basic": [ "grep" ],
+    "intermediate": [ "jq validate" ],
+    "advanced": [ "shellcheck" ]
+  },
+  "Data Validation & Serialization": {
+    "basic": [ "awk" ],
+    "intermediate": [ "yq" ],
+    "advanced": [ "custom bash functions" ]
+  },
+  "Templating": {
+    "basic": [ "envsubst" ],
+    "intermediate": [ "mustache-cli" ],
+    "advanced": [ "gomplate" ]
+  },
+  "Automation & Deployment": {
+    "basic": [ "scp" ],
+    "intermediate": [ "rsync" ],
+    "advanced": [ "ansible-playbook" ]
+  },
+  "Automation & Task Running": {
+    "basic": [ "make" ],
+    "intermediate": [ "cron" ],
+    "advanced": [ "jenkins pipeline" ]
+  },
+  "Command Line Tools": {
+    "basic": [ "getopts" ],
+    "intermediate": [ "argbash" ],
+    "advanced": [ "cobra CLI via subprocess" ]
+  },
+  "Terminal Formatting & Visualization": {
+    "basic": [ "tput" ],
+    "intermediate": [ "lolcat" ],
+    "advanced": [ "dialog/whiptail" ]
+  },
+  "Terminal UIs": {
+    "basic": [ "select" ],
+    "intermediate": [ "fzf" ],
+    "advanced": [ "dialog" ]
+  },
+  "Logging": {
+    "basic": [ "tee" ],
+    "intermediate": [ "logger" ],
+    "advanced": [ "rsyslog" ]
+  },
+  "Packaging & Distribution": {
+    "basic": [ "tar" ],
+    "intermediate": [ "dpkg-deb" ],
+    "advanced": [ "docker build" ]
+  },
+  "Package Management": {
+    "basic": [ "apt-get" ],
+    "intermediate": [ "brew" ],
+    "advanced": [ "nix-env" ]
+  },
+  "Code Formatting & Linting": {
+    "basic": [ "shfmt" ],
+    "intermediate": [ "shellcheck" ],
+    "advanced": [ "bashate" ]
+  },
+  "Static Typing & Checking": {
+    "basic": [ "set -u" ],
+    "intermediate": [ "shellcheck" ],
+    "advanced": [ "checkbashisms" ]
+  },
+  "Security Auditing": {
+    "basic": [ "grep for secrets" ],
+    "intermediate": [ "shellcheck (security)" ],
+    "advanced": [ "gitleaks" ]
+  },
+  "Cryptography": {
+    "basic": [ "openssl" ],
+    "intermediate": [ "gpg" ],
+    "advanced": [ "age" ]
+  },
+  "Secrets Management": {
+    "basic": [ "read -s" ],
+    "intermediate": [ "pass" ],
+    "advanced": [ "gopass" ]
+  }
+}
