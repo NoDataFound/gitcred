@@ -1,0 +1,257 @@
+{
+  "Web Development & APIs": {
+    "basic": [ "socket.http" ],
+    "intermediate": [ "luasocket" ],
+    "advanced": [ "OpenResty (ngx_lua)" ]
+  },
+  "Web App Development & Visualization": {
+    "basic": [ "lgi (GTK bindings)" ],
+    "intermediate": [ "Love2D (UI)" ],
+    "advanced": [ "wxLua" ]
+  },
+  "Data Science & Analysis": {
+    "basic": [ "Penlight (pl.data)" ],
+    "intermediate": [ "Torch7" ],
+    "advanced": [ "SciLua" ]
+  },
+  "Data Visualization": {
+    "basic": [ "gnuplot.lua" ],
+    "intermediate": [ "Love2D (graphics)" ],
+    "advanced": [ "imgui-lua" ]
+  },
+  "Machine Learning (Classical)": {
+    "basic": [ "Torch7" ],
+    "intermediate": [ "SciLua-ml" ],
+    "advanced": [ "deep learning via FFI/PyTorch" ]
+  },
+  "Machine Learning (Deep Learning)": {
+    "basic": [ "nn (Torch7)" ],
+    "intermediate": [ "dp (DeepPred)" ],
+    "advanced": [ "SciLua-nn" ]
+  },
+  "AI & LLM/NLP": {
+    "basic": [ "llm.lua" ],
+    "intermediate": [ "nlp-lua" ],
+    "advanced": [ "OpenAI API via luasocket/http" ]
+  },
+  "AI & Computer Vision": {
+    "basic": [ "image (Torch7)" ],
+    "intermediate": [ "Torch7 + cutorch" ],
+    "advanced": [ "OpenCV via LuaJIT FFI" ]
+  },
+  "AI & Speech/Audio": {
+    "basic": [ "luaspeech" ],
+    "intermediate": [ "audiowaveform-lua" ],
+    "advanced": [ "sox via os.execute" ]
+  },
+  "AI & Reinforcement Learning": {
+    "basic": [ "Torch7-rl" ],
+    "intermediate": [ "SciLua-rl" ],
+    "advanced": [ "custom via ffi/py" ]
+  },
+  "AI & Model Serving/Inference": {
+    "basic": [ "torchscript" ],
+    "intermediate": [ "ffi-calling onnxruntime" ],
+    "advanced": [ "OpenResty/ngx-lua for REST serving" ]
+  },
+  "Model Interchange & Deployment": {
+    "basic": [ "table.save/load" ],
+    "intermediate": [ "torch.save/load" ],
+    "advanced": [ "ffi to protobuf/flatbuffers" ]
+  },
+  "Machine Learning Operations (MLOps)": {
+    "basic": [ "os.execute + make" ],
+    "intermediate": [ "luarocks" ],
+    "advanced": [ "custom orchestrator via LuaJIT" ]
+  },
+  "Parallel Computing & Serialization": {
+    "basic": [ "coroutine" ],
+    "intermediate": [ "luaproc" ],
+    "advanced": [ "lanes" ]
+  },
+  "Software Testing": {
+    "basic": [ "busted" ],
+    "intermediate": [ "luatest" ],
+    "advanced": [ "lunatest" ]
+  },
+  "Property-Based Testing": {
+    "basic": [ "luapbt" ],
+    "intermediate": [ "busted randomization" ],
+    "advanced": [ "lua-quickcheck" ]
+  },
+  "Test Coverage": {
+    "basic": [ "luacov" ],
+    "intermediate": [ "luacov-console" ],
+    "advanced": [ "custom hooks" ]
+  },
+  "Cloud Services (AWS)": {
+    "basic": [ "lua-aws" ],
+    "intermediate": [ "resty.aws" ],
+    "advanced": [ "custom http for AWS APIs" ]
+  },
+  "Cloud Services (Azure)": {
+    "basic": [ "http.request" ],
+    "intermediate": [ "resty.http for Azure" ],
+    "advanced": [ "luaresty-azure" ]
+  },
+  "Cloud Services (GCP)": {
+    "basic": [ "http.request" ],
+    "intermediate": [ "google-lua-api" ],
+    "advanced": [ "custom OpenResty+GCP API" ]
+  },
+  "Networking & SSH": {
+    "basic": [ "socket.tcp" ],
+    "intermediate": [ "luasec" ],
+    "advanced": [ "ssh via os.execute or libssh2 ffi" ]
+  },
+  "Web Scraping & APIs": {
+    "basic": [ "http.request" ],
+    "intermediate": [ "lua-curl" ],
+    "advanced": [ "lxp/luaexpat" ]
+  },
+  "Web Scraping & Parsing": {
+    "basic": [ "lpeg" ],
+    "intermediate": [ "luaexpat" ],
+    "advanced": [ "xpath.lua" ]
+  },
+  "Web Scraping & Crawling": {
+    "basic": [ "lua-curl" ],
+    "intermediate": [ "lua-spider" ],
+    "advanced": [ "custom with coroutine + socket" ]
+  },
+  "Databases & ORMs": {
+    "basic": [ "luasql.sqlite3" ],
+    "intermediate": [ "luasql.mysql" ],
+    "advanced": [ "LuaORM" ]
+  },
+  "Databases (Postgres)": {
+    "basic": [ "luapgsql" ],
+    "intermediate": [ "pgmoon" ],
+    "advanced": [ "resty.postgres" ]
+  },
+  "Databases (MySQL)": {
+    "basic": [ "luasql.mysql" ],
+    "intermediate": [ "lua-resty-mysql" ],
+    "advanced": [ "mysql via ffi" ]
+  },
+  "Databases (SQLite)": {
+    "basic": [ "luasql.sqlite3" ],
+    "intermediate": [ "lsqlite3" ],
+    "advanced": [ "resty.sqlite3" ]
+  },
+  "Database Migration": {
+    "basic": [ "os.execute with sql scripts" ],
+    "intermediate": [ "dbmate (CLI from Lua)" ],
+    "advanced": [ "custom migration system" ]
+  },
+  "Task Queues & Distributed Processing": {
+    "basic": [ "coroutine + queue table" ],
+    "intermediate": [ "lua-taskq" ],
+    "advanced": [ "resty.task (OpenResty)" ]
+  },
+  "Caching & Message Brokering": {
+    "basic": [ "table cache" ],
+    "intermediate": [ "resty.redis" ],
+    "advanced": [ "resty.memcached" ]
+  },
+  "Messaging & Streaming": {
+    "basic": [ "socket.udp" ],
+    "intermediate": [ "resty.kafka" ],
+    "advanced": [ "lua-nats" ]
+  },
+  "Serialization & Config Parsing": {
+    "basic": [ "dkjson" ],
+    "intermediate": [ "serpent" ],
+    "advanced": [ "protobuf via ffi" ]
+  },
+  "Environment Management": {
+    "basic": [ "os.getenv" ],
+    "intermediate": [ "dotenv-lua" ],
+    "advanced": [ "custom via ffi" ]
+  },
+  "Environment & Dependency Management": {
+    "basic": [ "luarocks" ],
+    "intermediate": [ "luadist" ],
+    "advanced": [ "custom scripts" ]
+  },
+  "Data Validation & Settings Management": {
+    "basic": [ "type()" ],
+    "intermediate": [ "luacheck" ],
+    "advanced": [ "schema validation modules" ]
+  },
+  "Data Validation & Serialization": {
+    "basic": [ "dkjson" ],
+    "intermediate": [ "serpent" ],
+    "advanced": [ "cjson" ]
+  },
+  "Templating": {
+    "basic": [ "etlua" ],
+    "intermediate": [ "lustache" ],
+    "advanced": [ "sailor (templating in web)" ]
+  },
+  "Automation & Deployment": {
+    "basic": [ "os.execute" ],
+    "intermediate": [ "luarocks install" ],
+    "advanced": [ "custom orchestrator" ]
+  },
+  "Automation & Task Running": {
+    "basic": [ "os.execute" ],
+    "intermediate": [ "make" ],
+    "advanced": [ "custom Lua runner" ]
+  },
+  "Command Line Tools": {
+    "basic": [ "argparse" ],
+    "intermediate": [ "cliargs" ],
+    "advanced": [ "lapp" ]
+  },
+  "Terminal Formatting & Visualization": {
+    "basic": [ "ansicolors" ],
+    "intermediate": [ "termfx" ],
+    "advanced": [ "lcurses" ]
+  },
+  "Terminal UIs": {
+    "basic": [ "lcurses" ],
+    "intermediate": [ "termfx" ],
+    "advanced": [ "ltk" ]
+  },
+  "Logging": {
+    "basic": [ "print" ],
+    "intermediate": [ "logging.lua" ],
+    "advanced": [ "logroll" ]
+  },
+  "Packaging & Distribution": {
+    "basic": [ "luarocks pack" ],
+    "intermediate": [ "luadist" ],
+    "advanced": [ "custom Makefile" ]
+  },
+  "Package Management": {
+    "basic": [ "luarocks" ],
+    "intermediate": [ "luadist" ],
+    "advanced": [ "custom package system" ]
+  },
+  "Code Formatting & Linting": {
+    "basic": [ "luacheck" ],
+    "intermediate": [ "stylua" ],
+    "advanced": [ "lua-fmt" ]
+  },
+  "Static Typing & Checking": {
+    "basic": [ "luacheck" ],
+    "intermediate": [ "Teal" ],
+    "advanced": [ "typedlua" ]
+  },
+  "Security Auditing": {
+    "basic": [ "luacheck (security rules)" ],
+    "intermediate": [ "luasec" ],
+    "advanced": [ "custom security analyzer" ]
+  },
+  "Cryptography": {
+    "basic": [ "md5" ],
+    "intermediate": [ "luacrypto" ],
+    "advanced": [ "luaossl" ]
+  },
+  "Secrets Management": {
+    "basic": [ "os.getenv" ],
+    "intermediate": [ "dotenv-lua" ],
+    "advanced": [ "vault-api via http" ]
+  }
+}
