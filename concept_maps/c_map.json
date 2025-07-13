@@ -1,0 +1,257 @@
+{
+  "Web Development & APIs": {
+    "basic": [ "CivetWeb" ],
+    "intermediate": [ "Crow (C++)" ],
+    "advanced": [ "Pistache (C++)" ]
+  },
+  "Web App Development & Visualization": {
+    "basic": [ "Nuklear" ],
+    "intermediate": [ "Dear ImGui" ],
+    "advanced": [ "Qt" ]
+  },
+  "Data Science & Analysis": {
+    "basic": [ "GNU Scientific Library (GSL)" ],
+    "intermediate": [ "Armadillo" ],
+    "advanced": [ "Eigen" ]
+  },
+  "Data Visualization": {
+    "basic": [ "gnuplot (via C/C++)" ],
+    "intermediate": [ "matplotlib-cpp" ],
+    "advanced": [ "VTK" ]
+  },
+  "Machine Learning (Classical)": {
+    "basic": [ "dlib" ],
+    "intermediate": [ "mlpack" ],
+    "advanced": [ "Shark" ]
+  },
+  "Machine Learning (Deep Learning)": {
+    "basic": [ "tiny-dnn" ],
+    "intermediate": [ "TensorFlow C API" ],
+    "advanced": [ "Caffe" ]
+  },
+  "AI & LLM/NLP": {
+    "basic": [ "cpp-llama" ],
+    "intermediate": [ "onnxruntime C/C++" ],
+    "advanced": [ "sentencepiece" ]
+  },
+  "AI & Computer Vision": {
+    "basic": [ "stb_image" ],
+    "intermediate": [ "OpenCV" ],
+    "advanced": [ "dlib (vision)" ]
+  },
+  "AI & Speech/Audio": {
+    "basic": [ "PortAudio" ],
+    "intermediate": [ "librosa-cpp" ],
+    "advanced": [ "Kaldi" ]
+  },
+  "AI & Reinforcement Learning": {
+    "basic": [ "Reinforcement Learning Library (RLLib-C)" ],
+    "intermediate": [ "mlpack (RL module)" ],
+    "advanced": [ "TensorForce C++" ]
+  },
+  "AI & Model Serving/Inference": {
+    "basic": [ "onnxruntime" ],
+    "intermediate": [ "TensorFlow Serving C++" ],
+    "advanced": [ "Triton Inference Server C++" ]
+  },
+  "Model Interchange & Deployment": {
+    "basic": [ "FlatBuffers" ],
+    "intermediate": [ "protobuf-c" ],
+    "advanced": [ "ONNX (C/C++)" ]
+  },
+  "Machine Learning Operations (MLOps)": {
+    "basic": [ "CMake" ],
+    "intermediate": [ "conan" ],
+    "advanced": [ "Bazel" ]
+  },
+  "Parallel Computing & Serialization": {
+    "basic": [ "OpenMP" ],
+    "intermediate": [ "MPI" ],
+    "advanced": [ "CUDA" ]
+  },
+  "Software Testing": {
+    "basic": [ "assert.h" ],
+    "intermediate": [ "Catch2" ],
+    "advanced": [ "GoogleTest" ]
+  },
+  "Property-Based Testing": {
+    "basic": [ "RapidCheck" ],
+    "intermediate": [ "Hedgehog" ],
+    "advanced": [ "CppQuickCheck" ]
+  },
+  "Test Coverage": {
+    "basic": [ "gcov" ],
+    "intermediate": [ "lcov" ],
+    "advanced": [ "Codecov (C++ integration)" ]
+  },
+  "Cloud Services (AWS)": {
+    "basic": [ "aws-c-sdk" ],
+    "intermediate": [ "AWS SDK for C++" ],
+    "advanced": [ "aws-iot-device-sdk-cpp" ]
+  },
+  "Cloud Services (Azure)": {
+    "basic": [ "Azure IoT C SDK" ],
+    "intermediate": [ "Azure SDK for C++" ],
+    "advanced": [ "Azure Storage SDK for C++" ]
+  },
+  "Cloud Services (GCP)": {
+    "basic": [ "Google Cloud IoT Core C++" ],
+    "intermediate": [ "google-cloud-cpp" ],
+    "advanced": [ "grpc (Google RPC)" ]
+  },
+  "Networking & SSH": {
+    "basic": [ "libcurl" ],
+    "intermediate": [ "Boost.Asio" ],
+    "advanced": [ "libssh" ]
+  },
+  "Web Scraping & APIs": {
+    "basic": [ "libcurl" ],
+    "intermediate": [ "cpp-httplib" ],
+    "advanced": [ "Poco HTTP" ]
+  },
+  "Web Scraping & Parsing": {
+    "basic": [ "gumbo-parser" ],
+    "intermediate": [ "htmlcxx" ],
+    "advanced": [ "libxml2" ]
+  },
+  "Web Scraping & Crawling": {
+    "basic": [ "libcurl" ],
+    "intermediate": [ "libxml2" ],
+    "advanced": [ "Boost.Beast" ]
+  },
+  "Databases & ORMs": {
+    "basic": [ "sqlite3" ],
+    "intermediate": [ "soci" ],
+    "advanced": [ "odb" ]
+  },
+  "Databases (Postgres)": {
+    "basic": [ "libpq" ],
+    "intermediate": [ "pqxx" ],
+    "advanced": [ "soci (PostgreSQL backend)" ]
+  },
+  "Databases (MySQL)": {
+    "basic": [ "mysqlclient" ],
+    "intermediate": [ "MySQL++" ],
+    "advanced": [ "SOCI (MySQL backend)" ]
+  },
+  "Databases (SQLite)": {
+    "basic": [ "sqlite3" ],
+    "intermediate": [ "sqlite-modern-cpp" ],
+    "advanced": [ "soci (SQLite backend)" ]
+  },
+  "Database Migration": {
+    "basic": [ "sqlite3 CLI" ],
+    "intermediate": [ "Flyway (CLI w/C/C++ integration)" ],
+    "advanced": [ "Alembic (via subprocess)" ]
+  },
+  "Task Queues & Distributed Processing": {
+    "basic": [ "thread" ],
+    "intermediate": [ "ZeroMQ" ],
+    "advanced": [ "Celix" ]
+  },
+  "Caching & Message Brokering": {
+    "basic": [ "libmemcached" ],
+    "intermediate": [ "hiredis" ],
+    "advanced": [ "rabbitmq-c" ]
+  },
+  "Messaging & Streaming": {
+    "basic": [ "zmq" ],
+    "intermediate": [ "nanomsg" ],
+    "advanced": [ "Apache Kafka C/C++ client" ]
+  },
+  "Serialization & Config Parsing": {
+    "basic": [ "cJSON" ],
+    "intermediate": [ "yaml-cpp" ],
+    "advanced": [ "protobuf-c" ]
+  },
+  "Environment Management": {
+    "basic": [ ".env with getenv" ],
+    "intermediate": [ "Boost.Program_options" ],
+    "advanced": [ "vcpkg" ]
+  },
+  "Environment & Dependency Management": {
+    "basic": [ "pkg-config" ],
+    "intermediate": [ "conan" ],
+    "advanced": [ "hunter" ]
+  },
+  "Data Validation & Settings Management": {
+    "basic": [ "assert.h" ],
+    "intermediate": [ "Boost.PropertyTree" ],
+    "advanced": [ "json-schema-validator" ]
+  },
+  "Data Validation & Serialization": {
+    "basic": [ "cereal" ],
+    "intermediate": [ "protobuf" ],
+    "advanced": [ "FlatBuffers" ]
+  },
+  "Templating": {
+    "basic": [ "inja" ],
+    "intermediate": [ "ctemplate" ],
+    "advanced": [ "mustache-cpp" ]
+  },
+  "Automation & Deployment": {
+    "basic": [ "Make" ],
+    "intermediate": [ "CMake" ],
+    "advanced": [ "Bazel" ]
+  },
+  "Automation & Task Running": {
+    "basic": [ "Make" ],
+    "intermediate": [ "CMake" ],
+    "advanced": [ "Meson" ]
+  },
+  "Command Line Tools": {
+    "basic": [ "getopt" ],
+    "intermediate": [ "Boost.Program_options" ],
+    "advanced": [ "CLI11" ]
+  },
+  "Terminal Formatting & Visualization": {
+    "basic": [ "ncurses" ],
+    "intermediate": [ "termcolor" ],
+    "advanced": [ "FTXUI" ]
+  },
+  "Terminal UIs": {
+    "basic": [ "ncurses" ],
+    "intermediate": [ "termbox" ],
+    "advanced": [ "FTXUI" ]
+  },
+  "Logging": {
+    "basic": [ "stdio.h" ],
+    "intermediate": [ "spdlog" ],
+    "advanced": [ "glog" ]
+  },
+  "Packaging & Distribution": {
+    "basic": [ "tar" ],
+    "intermediate": [ "cpack" ],
+    "advanced": [ "conan" ]
+  },
+  "Package Management": {
+    "basic": [ "apt" ],
+    "intermediate": [ "vcpkg" ],
+    "advanced": [ "conan" ]
+  },
+  "Code Formatting & Linting": {
+    "basic": [ "clang-format" ],
+    "intermediate": [ "cppcheck" ],
+    "advanced": [ "clang-tidy" ]
+  },
+  "Static Typing & Checking": {
+    "basic": [ "gcc -Wall" ],
+    "intermediate": [ "cppcheck" ],
+    "advanced": [ "clang-analyzer" ]
+  },
+  "Security Auditing": {
+    "basic": [ "valgrind" ],
+    "intermediate": [ "cppcheck (security)" ],
+    "advanced": [ "CodeQL" ]
+  },
+  "Cryptography": {
+    "basic": [ "openssl" ],
+    "intermediate": [ "libsodium" ],
+    "advanced": [ "botan" ]
+  },
+  "Secrets Management": {
+    "basic": [ "getenv" ],
+    "intermediate": [ "libsecret" ],
+    "advanced": [ "HashiCorp Vault (C/C++ integration)" ]
+  }
+}
