@@ -45,6 +45,24 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 `GitCred: Straight Outta Commits` aims to provide insight into skillset by performing analysis on a GitHub user's profile (or any code repos, local files, etc... ) to generate a comprehensive, evidence-based skill and impact summary by inspecting their original repositories (not forks). Purposely does not leverage AI models so you can build your own concept mapping. Trust but verify.
 
+## Evidence-Based Skill Profiling
+GitCred works by harvesting quantifiable data from repositories to provide a real, evidence-based profile of a developer's work. Instead of generating pre-written sentences, it provides the raw data and metrics that support the high-level analysis described above.
+
+1. It Quantifies Your Contributions:
+GitCred analyzes commit logs to produce a `technical_analysis.csv` for each user. This file gives you hard numbers on:
+Commit frequency and volume per project.
+The lifespan of your projects (from first to last commit).
+Your role in a project (e.g., sole author vs. one of many contributors).
+Use this to back up claims like: "Sole author of Project X with over 200 commits in 6 months" or "Active contributor to 5 team projects over the last year."
+
+3. It Identifies Your Technical Toolchain:
+By parsing dependency files (like requirements.txt), GitCred infers the frameworks, languages, and libraries you actually use, presenting them as a list of "Inferred Concepts."
+Use this to build your skills matrix: If the output shows "React," "Docker," and "FastAPI," you have direct evidence of using those technologies in real projects.
+
+4. It Provides a Verifiable Audit Trail:
+The `comments_log.csv` file creates a searchable database of every comment you've written in your code.
+Use this to add depth to your experience: If you claim to be "security-conscious," you can point to the comments in your code where you explain your security-related logic. It provides a direct window into your thought process.
+
 ## Resume Builder Use Cases
 
 - **Automated, Evidence-Based Resume Generation**
@@ -75,9 +93,11 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
   - Map dependencies and stack choices across all repos to spot outdated libraries, deprecated tools, or lurking supply chain risks
   - Generate exposure matrices such as "Organization X has five production apps running unpatched Flask versions on Python 3.6"
 
-- **Red Team Reconnaissance**
+- **Reconnaissance**
   - Target open source contributors with specific strengths or weaknesses. For example, "JavaScript codebase is all vanilla, lacks modern framework expertise," allowing for custom engagement
   - Build a real skills graph for a developer community to plan infiltration or knowledge transfer operations
+  - The `comments_log.csv` is a powerful tool. Searching for keywords like "TODO: fix security" or "hack" can reveal a developer's true attitude toward security and uncover hidden risks.
+  - Useful for TTP discovery for suspected malicious software 
 
 ## Self-Improvement and Team Analysis
 
@@ -91,6 +111,8 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 **Example:**
 _A security team uses GitCred to verify who can handle rapid Python refactoring, or who has proven experience with advanced logging, cryptography, or supply chain risk detection. The CTO builds a heatmap of org strengths before launching a cloud migration or major audit._
+
+
 
 ## Making Your Own Concept Map Template
 
