@@ -167,6 +167,8 @@ source gitcredvenv/bin/activate
 
 ```bash
 python gitcred_cli.py -u <github_username>
+# or for file based bulk lookup for multiple users:
+python gitcred_cli.py -f <file with usernames>
 # or for multiple users:
 python gitcred_cli.py -u user1 user2
 # or analyze local repository:
