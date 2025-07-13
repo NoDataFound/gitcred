@@ -1,0 +1,292 @@
+{
+  "Web Development & APIs": {
+    "basic": [ "flask" ],
+    "intermediate": [ "fastapi" ],
+    "advanced": [ "django" ]
+  },
+  "Web App Development & Visualization": {
+    "basic": [ "streamlit" ],
+    "intermediate": [ "dash" ],
+    "advanced": [ "gradio" ]
+  },
+  "Data Science & Analysis": {
+    "basic": [ "pandas" ],
+    "intermediate": [ "numpy" ],
+    "advanced": [ "scipy" ]
+  },
+  "Data Visualization": {
+    "basic": [ "matplotlib" ],
+    "intermediate": [ "seaborn" ],
+    "advanced": [ "plotly" ]
+  },
+  "Machine Learning (Classical)": {
+    "basic": [ "scikit-learn" ],
+    "intermediate": [ "xgboost" ],
+    "advanced": [ "catboost" ]
+  },
+  "Machine Learning (Deep Learning)": {
+    "basic": [ "keras" ],
+    "intermediate": [ "tensorflow" ],
+    "advanced": [ "torch" ]
+  },
+  "AI & LLM/NLP": {
+    "basic": [
+      "openai",
+      "claude",
+      "anthropic",
+      "transformers"
+    ],
+    "intermediate": [
+      "sentence-transformers"
+    ],
+    "advanced": [
+      "llama-cpp-python"
+    ]
+  },
+  "AI & Computer Vision": {
+    "basic": [
+      "opencv-python"
+    ],
+    "intermediate": [
+      "mediapipe"
+    ],
+    "advanced": [
+      "detectron2"
+    ]
+  },
+  "AI & Speech/Audio": {
+    "basic": [
+      "speechrecognition"
+    ],
+    "intermediate": [
+      "torchaudio"
+    ],
+    "advanced": [
+      "whisper"
+    ]
+  },
+  "AI & Reinforcement Learning": {
+    "basic": [
+      "gym"
+    ],
+    "intermediate": [
+      "stable-baselines3"
+    ],
+    "advanced": [
+      "ray[rllib]"
+    ]
+  },
+  "AI & Model Serving/Inference": {
+    "basic": [
+      "openai",
+      "anthropic",
+      "onnxruntime"
+    ],
+    "intermediate": [
+      "torchserve"
+    ],
+    "advanced": [
+      "tritonclient"
+    ]
+  },
+  "Model Interchange & Deployment": {
+    "basic": [ "pickle" ],
+    "intermediate": [ "joblib" ],
+    "advanced": [ "onnx" ]
+  },
+  "Machine Learning Operations (MLOps)": {
+    "basic": [ "mlflow" ],
+    "intermediate": [ "dvc" ],
+    "advanced": [ "kubeflow" ]
+  },
+  "Parallel Computing & Serialization": {
+    "basic": [ "multiprocessing" ],
+    "intermediate": [ "joblib" ],
+    "advanced": [ "ray" ]
+  },
+  "Software Testing": {
+    "basic": [ "unittest" ],
+    "intermediate": [ "pytest" ],
+    "advanced": [ "tox" ]
+  },
+  "Property-Based Testing": {
+    "basic": [ "doctest" ],
+    "intermediate": [ "hypothesis" ],
+    "advanced": [ "pytest-hypothesis" ]
+  },
+  "Test Coverage": {
+    "basic": [ "coverage" ],
+    "intermediate": [ "pytest-cov" ],
+    "advanced": [ "codecov" ]
+  },
+  "Cloud Services (AWS)": {
+    "basic": [ "boto3" ],
+    "intermediate": [ "awscli" ],
+    "advanced": [ "aws-cdk" ]
+  },
+  "Cloud Services (Azure)": {
+    "basic": [ "azure-storage-blob" ],
+    "intermediate": [ "azure-functions" ],
+    "advanced": [ "azure-sdk" ]
+  },
+  "Cloud Services (GCP)": {
+    "basic": [ "google-cloud-storage" ],
+    "intermediate": [ "google-api-python-client" ],
+    "advanced": [ "google-cloud-sdk" ]
+  },
+  "Networking & SSH": {
+    "basic": [ "socket" ],
+    "intermediate": [ "paramiko" ],
+    "advanced": [ "twisted" ]
+  },
+  "Web Scraping & APIs": {
+    "basic": [ "requests" ],
+    "intermediate": [ "httpx" ],
+    "advanced": [ "aiohttp" ]
+  },
+  "Web Scraping & Parsing": {
+    "basic": [ "beautifulsoup4" ],
+    "intermediate": [ "lxml" ],
+    "advanced": [ "parsel" ]
+  },
+  "Web Scraping & Crawling": {
+    "basic": [ "requests-html" ],
+    "intermediate": [ "mechanize" ],
+    "advanced": [ "scrapy" ]
+  },
+  "Databases & ORMs": {
+    "basic": [ "sqlite3" ],
+    "intermediate": [ "sqlalchemy" ],
+    "advanced": [ "peewee" ]
+  },
+  "Databases (Postgres)": {
+    "basic": [ "psycopg2" ],
+    "intermediate": [ "pg8000" ],
+    "advanced": [ "asyncpg" ]
+  },
+  "Databases (MySQL)": {
+    "basic": [ "pymysql" ],
+    "intermediate": [ "mysql-connector-python" ],
+    "advanced": [ "aiomysql" ]
+  },
+  "Databases (SQLite)": {
+    "basic": [ "sqlite3" ],
+    "intermediate": [ "apsw" ],
+    "advanced": [ "dataset" ]
+  },
+  "Database Migration": {
+    "basic": [ "sqlite-utils" ],
+    "intermediate": [ "alembic" ],
+    "advanced": [ "flyway" ]
+  },
+  "Task Queues & Distributed Processing": {
+    "basic": [ "queue" ],
+    "intermediate": [ "rq" ],
+    "advanced": [ "celery" ]
+  },
+  "Caching & Message Brokering": {
+    "basic": [ "diskcache" ],
+    "intermediate": [ "redis" ],
+    "advanced": [ "memcached" ]
+  },
+  "Messaging & Streaming": {
+    "basic": [ "pubsub" ],
+    "intermediate": [ "rabbitmq" ],
+    "advanced": [ "kafka-python" ]
+  },
+  "Serialization & Config Parsing": {
+    "basic": [ "json" ],
+    "intermediate": [ "pyyaml" ],
+    "advanced": [ "msgpack" ]
+  },
+  "Environment Management": {
+    "basic": [ "python-dotenv" ],
+    "intermediate": [ "virtualenv" ],
+    "advanced": [ "conda" ]
+  },
+  "Environment & Dependency Management": {
+    "basic": [ "pip" ],
+    "intermediate": [ "requirements.txt" ],
+    "advanced": [ "poetry" ]
+  },
+  "Data Validation & Settings Management": {
+    "basic": [ "jsonschema" ],
+    "intermediate": [ "pydantic" ],
+    "advanced": [ "schematics" ]
+  },
+  "Data Validation & Serialization": {
+    "basic": [ "marshmallow" ],
+    "intermediate": [ "cattrs" ],
+    "advanced": [ "serpy" ]
+  },
+  "Templating": {
+    "basic": [ "jinja2" ],
+    "intermediate": [ "mako" ],
+    "advanced": [ "cheetah" ]
+  },
+  "Automation & Deployment": {
+    "basic": [ "fabric" ],
+    "intermediate": [ "invoke" ],
+    "advanced": [ "ansible" ]
+  },
+  "Automation & Task Running": {
+    "basic": [ "invoke" ],
+    "intermediate": [ "doit" ],
+    "advanced": [ "snakemake" ]
+  },
+  "Command Line Tools": {
+    "basic": [ "argparse" ],
+    "intermediate": [ "click" ],
+    "advanced": [ "typer" ]
+  },
+  "Terminal Formatting & Visualization": {
+    "basic": [ "rich" ],
+    "intermediate": [ "colorama" ],
+    "advanced": [ "blessed" ]
+  },
+  "Terminal UIs": {
+    "basic": [ "prompt_toolkit" ],
+    "intermediate": [ "textual" ],
+    "advanced": [ "urwid" ]
+  },
+  "Logging": {
+    "basic": [ "logging" ],
+    "intermediate": [ "loguru" ],
+    "advanced": [ "structlog" ]
+  },
+  "Packaging & Distribution": {
+    "basic": [ "setuptools" ],
+    "intermediate": [ "pyinstaller" ],
+    "advanced": [ "nuitka" ]
+  },
+  "Package Management": {
+    "basic": [ "pip" ],
+    "intermediate": [ "pipenv" ],
+    "advanced": [ "conda" ]
+  },
+  "Code Formatting & Linting": {
+    "basic": [ "black" ],
+    "intermediate": [ "flake8" ],
+    "advanced": [ "pylint" ]
+  },
+  "Static Typing & Checking": {
+    "basic": [ "typing" ],
+    "intermediate": [ "mypy" ],
+    "advanced": [ "pytype" ]
+  },
+  "Security Auditing": {
+    "basic": [ "bandit" ],
+    "intermediate": [ "safety" ],
+    "advanced": [ "pyup" ]
+  },
+  "Cryptography": {
+    "basic": [ "cryptography" ],
+    "intermediate": [ "pycryptodome" ],
+    "advanced": [ "pyopenssl" ]
+  },
+  "Secrets Management": {
+    "basic": [ "python-dotenv" ],
+    "intermediate": [ "keyring" ],
+    "advanced": [ "hashicorp-vault" ]
+  }
+}

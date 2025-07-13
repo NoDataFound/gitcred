@@ -1,0 +1,10 @@
+streamlit
+PyGithub
+python-dotenv
+flake8
+bandit
+GitPython
+pandas
+rich
+fade
+simple-term-menu

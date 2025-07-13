@@ -1,20 +1,24 @@
+```
+                         ▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
+                         ███ ▄▄█▄ ▄█ ▄▄▀█ ▄▄▀██▄███ ▄▄▄█ ████▄ ▄██
+                         ███▄▄▀██ ██ ▀▀▄█ ▀▀ ██ ▄██ █▄▀█ ▄▄ ██ ███
+                         ███▄▄▄██▄██▄█▄▄█▄██▄█▄▄▄██▄▄▄▄█▄██▄██▄███
+                         █▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
+                         █░▄▀▀▄    ░█░▒█░   ▀█▀░    ▀█▀░    █▀▀▄ █
+                         █░█░░█    ░█░▒█░   ░█░░    ░█░░    █▄▄█ █
+                         █░░▀▀░    ░░▀▀▀░   ░▀░░    ░▀░░    ▀░░▀ █
+                         █▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
+                         ██▀▄▀█▀▄▄▀█░▄▀▄░█░▄▀▄░█░▄▀▄░██▄██▄░▄█░▄▄█
+                         ██░█▀█░██░█░█▄█░█░█▄█░█░█▄█░██░▄██░██▄▄▀█
+                         ███▄███▄▄██▄███▄█▄███▄█▄███▄█▄▄▄██▄██▄▄▄█
+                         ▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
+.:/=====/\=======================================> [ NoDataFound - P R E S E N T S ] ===\:.
+ _ __  /  \________________________________________________________.gitCred v0.2.3 _ ___ _ 
+_ __ \/ /\_____________________________________________________ _________ __ _______ _  
+    \  /         T H E   P I N A C L E    O F   H A K C I N G   Q U A L I T Y  
+     \/ 
+```
 
-```
-▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄
-███ ▄▄█▄ ▄█ ▄▄▀█ ▄▄▀██▄███ ▄▄▄█ ████▄ ▄██
-███▄▄▀██ ██ ▀▀▄█ ▀▀ ██ ▄██ █▄▀█ ▄▄ ██ ███
-███▄▄▄██▄██▄█▄▄█▄██▄█▄▄▄██▄▄▄▄█▄██▄██▄███
-█▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀█
-█░▄▀▀▄    ░█░▒█░   ▀█▀░    ▀█▀░    █▀▀▄ █
-█░█░░█    ░█░▒█░   ░█░░    ░█░░    █▄▄█ █
-█░░▀▀░    ░░▀▀▀░   ░▀░░    ░▀░░    ▀░░▀ █
-█▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄█
-██▀▄▀█▀▄▄▀█░▄▀▄░█░▄▀▄░█░▄▀▄░██▄██▄░▄█░▄▄█
-██░█▀█░██░█░█▄█░█░█▄█░█░█▄█░██░▄██░██▄▄▀█
-███▄███▄▄██▄███▄█▄███▄█▄███▄█▄▄▄██▄██▄▄▄█
-▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀
-                           gitCred v0.2.3
-```
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](https://www.python.org/)
 [![Streamlit](https://img.shields.io/badge/Streamlit-WebUI-brightgreen)](https://streamlit.io/)
 [![Modular](https://img.shields.io/badge/Architecture-Modular-informational)](#)
@@ -22,90 +26,139 @@
 [![Commit Proof](https://img.shields.io/badge/Proof-Commits-black)](#)
 [![Version](https://img.shields.io/badge/GitCred-v0.2.3-orange)](#)
 
-# GitCred - Straight outta commits.
+# GitCred: Straight Outta Commits
 
-GitCred analyzes a GitHub user's profile to generate a comprehensive skills and impact summary by inspecting original repositories. 
+`GitCred: Straight Outta Commits` aims to provide insight into skillset by performing analysis on a GitHub user's profile (or any code repos, local files, etc... ) to generate a comprehensive, evidence-based skill and impact summary by inspecting their original repositories (not forks). Purposely does not leverage AI models so you can build your own concept mapping. Trust but verify.
 
-## **Resume Builder Use Cases**
+## Resume Builder Use Cases
 
-* **Automated, Evidence-Based Resume Generation**
+- **Automated, Evidence-Based Resume Generation**
+  - Instantly produces a skills matrix built from your actual code commits, not self-reported fluff
+  - Surfaces real proficiency in frameworks, languages, and coding paradigms by parsing live repositories and identifying libraries, patterns, and toolchains
+  - Generates impact summaries such as "Led original React microservice migration" or "Contributed to three security-focused Python projects," with a real audit trail
 
-  * Instantly produces a skills matrix based on your actual code commits, not just buzzwords or self-assessment.
-  * Surfaces *demonstrated* proficiency in frameworks, languages, and paradigms by parsing your real repositories and identifying libraries, patterns, and toolchains.
-  * Generates impact summaries like "Led original React microservice migration" or "Contributed to three security-focused Python projects," providing verifiable proof for your claims.
+- **Skill Gap Identification and Growth Tracking**
+  - Pinpoints which technologies you have genuinely mastered versus those with minimal exposure
+  - Visualizes your coding evolution, for instance, "Progressed from procedural scripting to OOP Python over two years"
 
-* **Skill Gap Identification and Growth Tracking**
+- **Showcasing Breadth and Depth for Recruiters**
+  - Produces a portfolio map demonstrating both coverage and context, such as "Built Flask APIs," "Unit-tested with pytest," or "Deployed with Docker Compose"
+  - One-click export for recruiters, yielding a skills dossier based on reality
 
-  * Highlights which languages and frameworks you have genuinely mastered versus those where your exposure is minimal or superficial.
-  * Visualizes the evolution of your coding portfolio, letting you show tangible progression, such as "Moved from procedural scripting to OOP Python over two years."
+## Analytical Use Cases
 
-* **Showcasing Breadth and Depth for Recruiters**
+- **Threat Hunter or CTI Validation**
+  - Profile open source contributors for red or blue team capabilities by examining their public artifacts, not just their LinkedIn headlines
+  - Triage potential hires, contributors, or even threat actors by the code they have written and committed
+  - Map contributors’ expertise to threat vectors. Example: "This candidate has authored kernel drivers and fuzzers, signaling low-level system exploit skills"
 
-  * Produces a portfolio map showing not only what you know, but how you use it, such as "Built Flask APIs," "Unit-tested with pytest," "Deployed with Docker Compose."
-  * Enables quick portfolio export for job applications. Recruiters get a real skills dossier, not just a laundry list of claims.
+- **Due Diligence and Mergers or Acquisitions**
+  - Rapidly assess the technical depth of engineering teams pre-acquisition or partnership by scanning public repository histories
+  - Identify star contributors whose work is critical to business continuity
 
-## **Analytical Use Cases**
+- **Technical Risk Assessment**
+  - Map dependencies and stack choices across all repos to spot outdated libraries, deprecated tools, or lurking supply chain risks
+  - Generate exposure matrices such as "Organization X has five production apps running unpatched Flask versions on Python 3.6"
 
-* **Threat Hunter or CTI Validation**
+- **Red Team Reconnaissance**
+  - Target open source contributors with specific strengths or weaknesses. For example, "JavaScript codebase is all vanilla, lacks modern framework expertise," allowing for custom engagement
+  - Build a real skills graph for a developer community to plan infiltration or knowledge transfer operations
 
-  * Profile open source contributors for red team or blue team skillsets by examining their code artifacts, not just their self-promotion.
-  * Quickly triage potential new hires, contributors, or threat actors by their actual technical work in public repositories.
-  * Map contributors’ expertise to threat vectors. For example, "This candidate has written several kernel drivers and fuzzers, indicating low-level system exploit development experience."
+## Self-Improvement and Team Analysis
 
-* **Due Diligence and Mergers & Acquisitions Technical Vetting**
+- **Individual Skill Development**
+  - Use your GitCred report to discover gaps in your portfolio and chart a learning plan with objective data
+  - Set specific growth targets like "Move from intermediate to advanced in cloud automation" by tracking your evolving toolchain
 
-  * Assess the true technical depth of engineering teams before acquisition or partnership by scanning their public repo histories.
-  * Identify star contributors or key experts whose work is crucial to business or project continuity.
+- **Team/Org Capability Mapping**
+  - Aggregate reports for all team members to build a real skills inventory. Visualize strengths, blind spots, and opportunities for training
+  - Use for succession planning, incident response preparation, or hackathon team formation based on provable capabilities
 
-* **Technical Risk Assessment**
+**Example:**
+_A security team uses GitCred to verify who can handle rapid Python refactoring, or who has proven experience with advanced logging, cryptography, or supply chain risk detection. The CTO builds a heatmap of org strengths before launching a cloud migration or major audit._
 
-  * Map out dependencies and stack choices across all repos. This is vital for identifying outdated libraries, deprecated tools, or supply chain risks lurking in an organization's codebase.
-  * Generate an exposure matrix. For example, "Organization X has five production apps on Python 3.6 with unpatched Flask versions."
+## Making Your Own Concept Map Template
 
-* **Red Team Social Engineering and Recon**
+GitCred is modular and extensible. You can define custom skill mappings for any language, stack, or internal framework.
 
-  * Target open source contributors with specific weaknesses or strengths. For example, "Their JavaScript is all vanilla; no modern framework experience," allowing for tailored engagement or lures.
-  * Map the real skills graph of a developer community to plan infiltration or knowledge transfer operations.
+### Step-by-Step: Adding Your Own Concept Map
 
-## **Summary**
+1. **Navigate to the `concept_maps/` directory.**
+2. **Create a new file** for your language or tech, such as `go_map.json` or `internalsec_map.json`
+3. **Use the following template structure:**
 
-GitCred’s modular analysis pipeline validates skills, pinpoints strengths, exposes weaknesses, and helps you or your team make data-driven talent, security, or business decisions. For a hacker, threat hunter, or recruiter, it is like scanning a target’s badge and getting their *actual* clearance level, not just the one written in marker.
+   ```json
+   {
+     "Category 1": {
+       "basic": [ "library1", "library2" ],
+       "intermediate": [ "library3" ],
+       "advanced": [ "library4" ]
+     },
+     "Category 2": {
+       "basic": [ "libA" ],
+       "intermediate": [ "libB" ],
+       "advanced": [ "libC" ]
+     }
+   }
+    ```
 
-If you want receipts, GitCred brings receipts.
+4. **Ensure the filename matches the language name from GitHub, all lowercase, and ends in `_map.json`.** For example, `javascript_map.json`.
 
-## Extensible Architecture
+5. **Update or create a corresponding analyzer** in the `analyzers/` directory for your language, or extend an existing one to recognize your new concept map and parse dependencies or frameworks accordingly.
 
-This tool is built with a highly modular architecture. The core logic in `main_analyzer.py` dispatches tasks to language-specific modules.
+6. **Register your new analyzer** in the main analyzer dispatch map (`main_analyzer.py`), by adding an entry in the form:
 
-### Extending GitCred
+   ```python
+   LANGUAGE_TO_ANALYZER_MAP = {
+       "YourLanguage": YourLanguageAnalyzer,
+       ...
+   }
+   ```
 
-**1. Adding a New Language Analyzer:**
--   Go to the `analyzers/` directory.
--   Copy `template_analyzer.py` to `newlanguage_analyzer.py`.
--   Implement the methods in your new class using tools specific to that language (e.g., linters, dependency parsers).
--   Open `main_analyzer.py` and register your new class in the `ANALYZER_MAP` dictionary.
+7. **Test your new mapping** by running the CLI or Streamlit app on a repo using your target language or tech.
 
-**2. Adding a New Concept Map:**
--   Go to the `concept_maps/` directory.
--   Create a new file named `newlanguage_map.json`. The filename must match the lowercase language name from GitHub (e.g., `javascript_map.json`).
--   Populate the file with key-value pairs, where the key is the library name (as found by your analyzer) and the value is the concept to display.
+### Pro Tips
+
+* You can categorize skills by framework, paradigm, security level, or any other taxonomy. Make it as broad or as granular as your use case demands.
+* You can fork and adapt the Python template to onboard new languages, or even create org-specific skill maps for custom tools.
 
 ## Setup
 
-The installer script handles the complete setup.
+Either run 
 ```bash
-chmod +x installer.sh
-./installer.sh
-```
-# Usage
-Navigate into the project directory (cd gitcred) and activate the virtual environment (source gitcredvenv/bin/activate).
-Web UI:
-
-```bash
-streamlit run app.py
+chmod +755 gitcred_installer.sh
+./gitcred_installer.sh
 ```
 
+or manually create the virtual environment and install dedendancies.
+
 ```bash
-python cli.py <github_username>
+python3 -m venv gitcredvenv
+source gitcredvenv/bin/activate
+pip install --quiet --upgrade pip
+pip install --quiet -r requirements.txt
 ```
 
+## Usage
+
+Activate the virtual environment, then choose your mode.
+```
+source gitcredvenv/bin/activate
+```
+**CLI:**
+
+```bash
+python gitcred_cli.py -u <github_username>
+# or for multiple users:
+python gitcred_cli.py -u user1 user2
+# or analyze local repository:
+python gitcred_cli.py -l /path/to/local/repo
+```
+
+All output and summary files are saved under the `analysis/` directory per user or repo.
+
+## Summary
+
+GitCred’s modular pipeline validates skills, pinpoints strengths, exposes weaknesses, and helps you or your team make data-driven talent, security, or business decisions. For hackers, threat hunters, and recruiters, it is like scanning a target’s badge and getting their actual clearance, not just what is written in marker.
+
+If you want receipts, GitCred brings receipts.
