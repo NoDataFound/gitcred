@@ -4,11 +4,9 @@ import argparse
 import pandas as pd
 import fade
 
-# --- WARNING SUPPRESSION MUST GO FIRST ---
 import warnings
 from urllib3.exceptions import NotOpenSSLWarning
 warnings.filterwarnings("ignore", category=NotOpenSSLWarning)
-# --- END OF FIX ---
 
 from dotenv import load_dotenv
 from github import Github
