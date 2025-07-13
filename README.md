@@ -28,6 +28,15 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 # GitCred: Straight Outta Commits
 
+<table align="center">
+  <tr>
+    <td align="center"><img src="images/repo_processing.png" alt="A"></td>
+    <td align="center"><img src="images/summary.png" alt="B"></td>
+  </tr>
+</table>
+
+
+
 `GitCred: Straight Outta Commits` aims to provide insight into skillset by performing analysis on a GitHub user's profile (or any code repos, local files, etc... ) to generate a comprehensive, evidence-based skill and impact summary by inspecting their original repositories (not forks). Purposely does not leverage AI models so you can build your own concept mapping. Trust but verify.
 
 ## Resume Builder Use Cases
