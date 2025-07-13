@@ -50,10 +50,10 @@ def process_user_repos(user, repos_to_process):
         try:
             repo_path = os.path.join(temp_dir, repo.name)
             
-            # --- FIX: REMOVED depth=1 to perform a full clone ---
+   
             # This will download the entire history, fixing the "bad object" error.
             git.Repo.clone_from(repo.clone_url, repo_path)
-            # --- END FIX ---
+   
             
             tech_stats.extend(analyze_git_logs(repo_path))
             
@@ -150,7 +150,7 @@ def process_local_repo(repo_path):
     output_dir = os.path.join("analysis", repo_name)
     os.makedirs(output_dir, exist_ok=True)
     
-    git_stats = analyze_git_logs(repo_path) # Now returns a list
+    git_stats = analyze_git_logs(repo_path) 
     pd.DataFrame(git_stats).to_csv(os.path.join(output_dir, "technical_analysis.csv"), index=False)
     
     # Simple check for error in the first record
