@@ -4,9 +4,11 @@ import argparse
 import pandas as pd
 import fade
 
+# --- WARNING SUPPRESSION MUST GO FIRST ---
 import warnings
 from urllib3.exceptions import NotOpenSSLWarning
 warnings.filterwarnings("ignore", category=NotOpenSSLWarning)
+# --- END OF FIX ---
 
 from dotenv import load_dotenv
 from github import Github
@@ -19,21 +21,20 @@ from main_analyzer import get_user_and_repos, process_user_repos, process_local_
 
 
 def display_online_results(console, results):
-
+    """
+    This function displays the comprehensive summary report.
+    """
     user, repos = results["user"], results["repos"]
-    concepts = results.get("concepts", {}) 
+    concepts = results.get("concepts", {})
     
-    # --- Create the leveled display for the console ---
     console.print(Panel(f"[bold green]Analysis for {user.name or user.login} complete![/]", title="Overall Summary", border_style="green", subtitle="Straight outta commits."))
     
-    # --- Impact Summary Panel ---
     repo_details = [{"name": r.name, "stars": r.stargazers_count, "forks": r.forks_count, "language": r.language or "N/A"} for r in repos]
     impact_text = Text(f"Analyzed Repos: {len(repos)} | ", style="bold")
     impact_text.append(f"Total Stars (in selection): {sum(r['stars'] for r in repo_details)} ★ | ", style="bold yellow")
     impact_text.append(f"Total Forks (in selection): {sum(r['forks'] for r in repo_details)} 🍴", style="bold blue")
     console.print(Panel(impact_text, title="[bold cyan]Impact Summary[/]", border_style="cyan"))
 
-    # --- Leveled Skillset Panel ---
     if concepts:
         levels = {"basic": [], "intermediate": [], "advanced": []}
         for concept, level in concepts.items():
@@ -51,15 +52,13 @@ def display_online_results(console, results):
         if skill_text:
             console.print(Panel(skill_text.strip(), title="[bold magenta]Inferred Skillset / Concepts[/]", border_style="magenta"))
 
-    # --- Top Repos Table ---
     table_repos = Table(title="Top 10 Repositories by Stars (in selection)")
     table_repos.add_column("Name", style="cyan"); table_repos.add_column("Language", style="green"); table_repos.add_column("Stars ★", style="yellow"); table_repos.add_column("Forks 🍴", style="blue")
     df_repos = pd.DataFrame(repo_details).sort_values(by="stars", ascending=False).head(10)
     for _, row in df_repos.iterrows():
         table_repos.add_row(row['name'], row['language'], str(row['stars']), str(row['forks']))
     console.print(table_repos)
-
-    # --- Code Quality Panel ---
+    
     quality, security = results["quality"], results["security"]
     files_analyzed = quality.get("files_analyzed", 0)
     if files_analyzed > 0:
@@ -68,10 +67,8 @@ def display_online_results(console, results):
         quality_text = f"PEP Compliance (violations/file): [bold]{avg_violations:.2f}[/bold]\nHigh-Severity Security Issues: [bold red]{high_issues}[/bold red]"
         console.print(Panel(quality_text, title="[bold yellow]Python Code Quality[/bold yellow]", border_style="yellow"))
 
-    # --- Create and Save summary.csv ---
     summary_data = []
     if concepts:
-        # THIS IS THE CORRECTED LOOP FOR CREATING THE CSV DATA
         for category, level in concepts.items():
             summary_data.append({"Category": "Skillset", "Item": category, "Level": level, "Value": ""})
     
@@ -88,7 +85,6 @@ def display_online_results(console, results):
     summary_df.to_csv(summary_path, index=False)
     summary_csv_created = True
 
-    # --- Final Confirmation Panel ---
     saved_files_text = ""
     if summary_csv_created:
         saved_files_text += f"[green]Summary saved to:[/][bold cyan] {summary_path}[/]"
@@ -96,7 +92,7 @@ def display_online_results(console, results):
         saved_files_text += f"\n[green]Technical stats saved to:[/][bold cyan] {os.path.join(results['output_dir'], 'technical_analysis.csv')}[/]"
     if results.get("comments_log_created"):
         saved_files_text += f"\n[green]Comments log saved to:[/][bold cyan] {os.path.join(results['output_dir'], 'comments_log.csv')}[/]"
-    console.print(Panel(saved_files_text, title="Saved Files", border_style="green"))
+    console.print(Panel(saved_files_text, title="📂 Saved Files", border_style="green"))
 
 
 def main():
@@ -122,7 +118,8 @@ def main():
         usernames = args.users if args.users else []
         if args.file:
             try:
-                with open(args.file, 'r') as f: usernames.extend([line.strip() for line in f if line.strip()])
+                with open(args.file, 'r') as f:
+                    usernames.extend([line.strip() for line in f if line.strip() and not line.strip().startswith('#')])
             except FileNotFoundError: console.print(f"[bold red]Error: File not found at '{args.file}'[/]"); sys.exit(1)
         
         load_dotenv(); GITHUB_TOKEN = os.getenv("GITHUB_TOKEN")
@@ -132,7 +129,11 @@ def main():
         for username in set(usernames):
             console.print(Panel(f"Fetching repos for [bold cyan]{username}[/]", border_style="blue"))
             user, repos = get_user_and_repos(g, username)
-            if repos is None: console.print(f"[bold red]{user}[/]"); continue
+
+            # If the user is None, 'repos' contains the error string.
+            if user is None: 
+                console.print(f"[bold red]{repos}[/]"); continue
+            
             if not repos: console.print(f"[yellow]User '{username}' has no original public repositories.[/]"); continue
             
             menu_entries = [f"[a] SELECT ALL ({len(repos)} repositories)"]
