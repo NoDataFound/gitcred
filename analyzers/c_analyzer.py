@@ -5,10 +5,9 @@ import re
 from .base_analyzer import BaseAnalyzer
 
 class CAnalyzer(BaseAnalyzer):
-    """
-    Concrete analyzer for C/C++ repositories.
-    Relies on external tools: clang-tidy and flawfinder.
-    """
+    def __init__(self, repo_path, excluded_lines=None): 
+        super().__init__(repo_path)
+        self.excluded_lines = excluded_lines or set() 
 
     def get_dependencies(self):
         """

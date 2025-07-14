@@ -5,10 +5,10 @@ import re
 from .base_analyzer import BaseAnalyzer
 
 class BashAnalyzer(BaseAnalyzer):
-    """
-    Concrete analyzer for Bash/Shell scripts.
-    Relies on the external tool: shellcheck.
-    """
+    def __init__(self, repo_path, excluded_lines=None): 
+        super().__init__(repo_path)
+        self.excluded_lines = excluded_lines or set() 
+
 
     def get_dependencies(self):
         """

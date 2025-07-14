@@ -5,8 +5,9 @@ import re
 from .base_analyzer import BaseAnalyzer
 
 class JavaScriptAnalyzer(BaseAnalyzer):
-    """Concrete analyzer for JavaScript/TypeScript repositories."""
-
+    def __init__(self, repo_path, excluded_lines=None): 
+        super().__init__(repo_path)
+        self.excluded_lines = excluded_lines or set() 
     def get_dependencies(self):
         """Parses package.json for dependencies."""
         deps = []
