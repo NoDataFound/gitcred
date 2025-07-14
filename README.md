@@ -71,6 +71,7 @@ When you run an analysis with the --vibe flag, two things happen:
 analysis/{username}/vibe_code.csv
 2. Exclusion from Analysis: Once a line of code is flagged, it is excluded from all subsequent analysis steps (comments, quality, security). This ensures the final metrics reflect the human-written code, giving you a more accurate assessment of the developer's genuine proficiency and style.
 
+![Some Picture](images/vibe_csv.png)
 
 ## Resume Builder Use Cases
 
