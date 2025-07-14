@@ -221,11 +221,11 @@ Analysis with Vibe Check & Exclusion Enabled:
 Generated bash
 ```bash
 # Analyze a user with the Vibe Check filter
-python cli.py -u <github_username> --vibe
+python gitcred_cli.py -u <github_username> --vibe
 # Analyze users from a file with the Vibe Check filter
-python cli.py -f <file_with_usernames> --vibe
+python gitcred_cli.py -f <file_with_usernames> --vibe
 # Analyze a local repository with the Vibe Check filter
-python cli.py -l /path/to/local/repo --vibe
+python gitcred_cli.py -l /path/to/local/repo --vibe
 ```
 
 All output and summary files are saved under the `analysis/` directory per user or repo.
