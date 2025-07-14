@@ -28,13 +28,14 @@ _ __ \/ /\_____________________________________________________ _________ __ ___
 
 # GitCred: Straight Outta Commits
 
-![Some Picture](images/sidebyside.png)
+![Some Picture](images/sidebyside_vibe.png)
 
 
 # GitCred: Straight Outta Commits Overview
 
 ## Languages Currently Supported
 
+[![Vibe Coding](https://img.shields.io/badge/Vibe%20Coding-purple?logo=ghost)
 [![Python](https://img.shields.io/badge/Python-blue?logo=python)](https://www.python.org/)
 [![Jupyter](https://img.shields.io/badge/Jupyter%20Notebook-orange?logo=jupyter)](https://jupyter.org/)
 [![JavaScript](https://img.shields.io/badge/JavaScript-yellow?logo=javascript)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
@@ -62,6 +63,14 @@ Use this to build your skills matrix: If the output shows "React," "Docker," and
 4. It Provides a Verifiable Audit Trail:
 The `comments_log.csv` file creates a searchable database of every comment you've written in your code.
 Use this to add depth to your experience: If you claim to be "security-conscious," you can point to the comments in your code where you explain your security-related logic. It provides a direct window into your thought process.
+
+## AI Vibe Check & Exclusion Filter
+GitCred includes an experimental "Vibe Analyzer" designed not just to detect the stylistic tells of AI-generated code, but more importantly, to filter this code out of the final analysis. This provides a cleaner, more authentic signal of a developer's personal coding style and habits.
+When you run an analysis with the --vibe flag, two things happen:
+1. Detection & Logging: The analyzer scans every file for common AI indicators (typographic tics, overly formal comments, generic variable names). Every finding is logged in detail to a new file in the user's analysis directory:
+analysis/{username}/vibe_code.csv
+2. Exclusion from Analysis: Once a line of code is flagged, it is excluded from all subsequent analysis steps (comments, quality, security). This ensures the final metrics reflect the human-written code, giving you a more accurate assessment of the developer's genuine proficiency and style.
+
 
 ## Resume Builder Use Cases
 
@@ -205,6 +214,17 @@ python gitcred_cli.py -f <file with usernames>
 python gitcred_cli.py -u user1 user2
 # or analyze local repository:
 python gitcred_cli.py -l /path/to/local/repo
+```
+
+Analysis with Vibe Check & Exclusion Enabled:
+Generated bash
+```bash
+# Analyze a user with the Vibe Check filter
+python cli.py -u <github_username> --vibe
+# Analyze users from a file with the Vibe Check filter
+python cli.py -f <file_with_usernames> --vibe
+# Analyze a local repository with the Vibe Check filter
+python cli.py -l /path/to/local/repo --vibe
 ```
 
 All output and summary files are saved under the `analysis/` directory per user or repo.
