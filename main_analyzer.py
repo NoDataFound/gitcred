@@ -26,11 +26,22 @@ LANGUAGE_TO_ANALYZER_MAP = {
     "Shell": BashAnalyzer,
 }
 
+
+def append_df_to_csv(df, csv_path):
+    """
+    Appends a DataFrame to a CSV file. Creates the file with a header if it doesn't exist.
+    """
+    file_exists = os.path.exists(csv_path)
+    
+    df.to_csv(
+        csv_path,
+        mode='a',
+        header=not file_exists, 
+        index=False
+    )
+    
 def fetch_contribution_graph(username, token):
-    """
-    Fetches the user's contribution graph data for the last year using the GraphQL API.
-    Returns the calendar data or None on error.
-    """
+    """Fetches contribution data using the GitHub GraphQL API."""
     if not token:
         return None # This feature requires authentication
 
@@ -108,13 +119,12 @@ def render_ascii_graph(calendar_data):
         row_str = day_names[day_of_week] + " ".join(grid[day_of_week]).rstrip()
         output_string.append(row_str)
         
-    #
     faded_graph = fade.purplepink("\n".join(output_string))
     
     return faded_graph
 
 def get_user_and_repos(github_client, username):
-
+    """Fetches user data and sorts their original repositories by star count."""
     try:
         user = github_client.get_user(username)
         all_repos = list(user.get_repos())
@@ -194,97 +204,25 @@ def process_user_repos(user, repos_to_process, vibe_check_enabled=False):
     
     shutil.rmtree(temp_dir)
 
+    # --- CSV WRITING LOGIC FIXED TO APPEND ---
     if vibe_check_enabled and all_vibe_findings:
         df_vibe = pd.DataFrame(all_vibe_findings)
-        df_vibe[['repo_name', 'file_name', 'line_number', 'line_content', 'reason']].to_csv(os.path.join(output_dir, "vibe_code.csv"), index=False)
+        append_df_to_csv(df_vibe[['repo_name', 'file_name', 'line_number', 'line_content', 'reason']], os.path.join(output_dir, "vibe_code.csv"))
 
     tech_analysis_created = False
     if tech_stats:
-        pd.DataFrame(tech_stats).to_csv(os.path.join(output_dir, "technical_analysis.csv"), index=False)
+        append_df_to_csv(pd.DataFrame(tech_stats), os.path.join(output_dir, "technical_analysis.csv"))
         tech_analysis_created = True
 
     comments_log_created = False
     if all_comments:
-        pd.DataFrame(all_comments).to_csv(os.path.join(output_dir, "comments_log.csv"), index=False)
+        append_df_to_csv(pd.DataFrame(all_comments), os.path.join(output_dir, "comments_log.csv"))
         comments_log_created = True
 
     return {
         "user": user, "repos": repos_to_process, "concepts": all_concepts, "quality": total_quality, "security": total_security,
         "output_dir": output_dir, "comment_count": len(all_comments), "tech_analysis_created": tech_analysis_created, 
         "comments_log_created": comments_log_created, "vibe_finding_count": len(all_vibe_findings)
-    }
-
-def analyze_git_logs(repo_path):
-    """
-    Parses git logs to extract a detailed, commit-by-commit record.
-    """
-    try:
-        repo = git.Repo(repo_path)
-        commits_data = []
-        for commit in repo.iter_commits():
-            commits_data.append({
-                "repo_name": os.path.basename(repo_path), "commit_hash": commit.hexsha, "author_name": commit.author.name,
-                "author_email": commit.author.email, "commit_date": commit.committed_datetime.strftime("%Y-%m-%d %H:%M:%S"),
-                "commit_message": commit.message.strip().replace('\n', ' | '), "files_changed": len(commit.stats.files),
-                "lines_added": commit.stats.total.get('insertions', 0), "lines_deleted": commit.stats.total.get('deletions', 0),
-            })
-        return commits_data
-    except Exception as e:
-        return [{"repo_name": os.path.basename(repo_path), "error": f"Could not analyze Git logs: {e}"}]
-
-def process_local_repo(repo_path, vibe_check_enabled=False):
-    """Processes a single local repository, with optional vibe check."""
-    if not os.path.isdir(repo_path): return {"error": f"Directory not found: {repo_path}"}
-    repo_name = os.path.basename(os.path.normpath(repo_path))
-    output_dir = os.path.join("analysis", repo_name)
-    os.makedirs(output_dir, exist_ok=True)
-    
-    excluded_lines, vibe_findings = set(), []
-    if vibe_check_enabled:
-        vibe_analyzer = VibeAnalyzer(repo_path)
-        vibe_findings, excluded_lines = vibe_analyzer.analyze()
-        if vibe_findings:
-            df_vibe = pd.DataFrame(vibe_findings); df_vibe['repo_name'] = repo_name
-            df_vibe[['repo_name', 'file_name', 'line_number', 'line_content', 'reason']].to_csv(os.path.join(output_dir, "vibe_code.csv"), index=False)
-            
-    git_stats = analyze_git_logs(repo_path)
-    if "error" in git_stats[0]: return {"error": git_stats[0]["error"]}
-    pd.DataFrame(git_stats).to_csv(os.path.join(output_dir, "technical_analysis.csv"), index=False)
-    
-    all_concepts = {}; proficiency_order = {"basic": 1, "intermediate": 2, "advanced": 3}
-    all_comments = []; total_quality = {"violations": 0, "files_analyzed": 0}; total_security = []
-    
-    # Assume Python for local analysis
-    language = "Python"
-    analyzer_class = LANGUAGE_TO_ANALYZER_MAP.get(language)
-    
-    if analyzer_class:
-        analyzer = analyzer_class(repo_path, excluded_lines=excluded_lines)
-        all_comments = analyzer.harvest_comments()
-        if all_comments:
-            pd.DataFrame(all_comments).to_csv(os.path.join(output_dir, "comments_log.csv"), index=False)
-        
-        q = analyzer.analyze_quality(); total_quality["violations"] += q.get("violations", 0); total_quality["files_analyzed"] += q.get("files_analyzed", 0)
-        total_security.extend(analyzer.analyze_security())
-        
-        deps = analyzer.get_dependencies()
-        concept_map_path = f"concept_maps/{language.lower()}_map.json"
-        if os.path.exists(concept_map_path):
-            with open(concept_map_path, 'r') as f:
-                concept_map = json.load(f)
-            for dep in deps:
-                for category, levels in concept_map.items():
-                    for level_name, packages in levels.items():
-                        if dep in packages:
-                            current_level_value = proficiency_order.get(all_concepts.get(category), 0)
-                            new_level_value = proficiency_order.get(level_name, 0)
-                            if new_level_value > current_level_value:
-                                all_concepts[category] = level_name
-    
-    return {
-        "repo_name": repo_name, "output_dir": output_dir, "git_stats": git_stats, "concepts": all_concepts,
-        "quality": total_quality, "security": total_security, "comment_count": len(all_comments), 
-        "vibe_finding_count": len(vibe_findings)
     }
 
 def analyze_git_logs(repo_path):
@@ -313,32 +251,57 @@ def analyze_git_logs(repo_path):
     except Exception as e:
         return [{"repo_name": os.path.basename(repo_path), "error": f"Could not analyze Git logs: {e}"}]
 
-def process_local_repo(repo_path, vibe_check_enabled=False): # <-- NEW FLAG ADDED
+def process_local_repo(repo_path, vibe_check_enabled=False):
+    """Processes a single local repository, with optional vibe check."""
     if not os.path.isdir(repo_path): return {"error": f"Directory not found: {repo_path}"}
     repo_name = os.path.basename(os.path.normpath(repo_path))
     output_dir = os.path.join("analysis", repo_name)
     os.makedirs(output_dir, exist_ok=True)
     
-    excluded_lines = set()
-    vibe_findings = []
+    excluded_lines, vibe_findings = set(), []
     if vibe_check_enabled:
         vibe_analyzer = VibeAnalyzer(repo_path)
         vibe_findings, excluded_lines = vibe_analyzer.analyze()
         if vibe_findings:
-            df_vibe = pd.DataFrame(vibe_findings)
-            df_vibe['repo_name'] = repo_name # Add repo context
-            df_vibe[['repo_name', 'file_name', 'line_number', 'line_content', 'reason']].to_csv(os.path.join(output_dir, "vibe_code.csv"), index=False)
+            df_vibe = pd.DataFrame(vibe_findings); df_vibe['repo_name'] = repo_name
+            append_df_to_csv(df_vibe[['repo_name', 'file_name', 'line_number', 'line_content', 'reason']], os.path.join(output_dir, "vibe_code.csv"))
             
     git_stats = analyze_git_logs(repo_path)
-    pd.DataFrame(git_stats).to_csv(os.path.join(output_dir, "technical_analysis.csv"), index=False)
-    
     if "error" in git_stats[0]: return {"error": git_stats[0]["error"]}
+    append_df_to_csv(pd.DataFrame(git_stats), os.path.join(output_dir, "technical_analysis.csv"))
     
-    analyzer = PythonAnalyzer(repo_path, excluded_lines=excluded_lines)
-    comments = analyzer.harvest_comments()
-    if comments: pd.DataFrame(comments).to_csv(os.path.join(output_dir, "comments_log.csv"), index=False)
+    all_concepts = {}; proficiency_order = {"basic": 1, "intermediate": 2, "advanced": 3}
+    all_comments = []; total_quality = {"violations": 0, "files_analyzed": 0}; total_security = []
+    
+    # Simple language detection for local repos could be added here. For now, assuming Python.
+    language = "Python"
+    analyzer_class = LANGUAGE_TO_ANALYZER_MAP.get(language)
+    
+    if analyzer_class:
+        analyzer = analyzer_class(repo_path, excluded_lines=excluded_lines)
+        all_comments = analyzer.harvest_comments()
+        if all_comments:
+            append_df_to_csv(pd.DataFrame(all_comments), os.path.join(output_dir, "comments_log.csv"))
+        
+        q = analyzer.analyze_quality(); total_quality["violations"] += q.get("violations", 0); total_quality["files_analyzed"] += q.get("files_analyzed", 0)
+        total_security.extend(analyzer.analyze_security())
+        
+        deps = analyzer.get_dependencies()
+        concept_map_path = f"concept_maps/{language.lower()}_map.json"
+        if os.path.exists(concept_map_path):
+            with open(concept_map_path, 'r') as f:
+                concept_map = json.load(f)
+            for dep in deps:
+                for category, levels in concept_map.items():
+                    for level_name, packages in levels.items():
+                        if dep in packages:
+                            current_level_value = proficiency_order.get(all_concepts.get(category), 0)
+                            new_level_value = proficiency_order.get(level_name, 0)
+                            if new_level_value > current_level_value:
+                                all_concepts[category] = level_name
     
     return {
-        "repo_name": repo_name, "output_dir": output_dir, "git_stats": git_stats, 
-        "comment_count": len(comments), "vibe_finding_count": len(vibe_findings)
+        "repo_name": repo_name, "output_dir": output_dir, "git_stats": git_stats, "concepts": all_concepts,
+        "quality": total_quality, "security": total_security, "comment_count": len(all_comments), 
+        "vibe_finding_count": len(vibe_findings)
     }
